@@ -1,0 +1,871 @@
+/*
+Форма обратной связи
+*/
+.form-output{
+	display: block;
+}
+.form-output-zag-desktop{
+	position: relative;
+	left: 0px;
+	display: block;
+}
+.form-output-section-mobile{
+	display: none;
+}
+.form-output-zag-mobile{
+	display: none;
+}
+.form-output-mobile{
+	display: none;
+}
+.post-comment-submit{
+display: none;
+}
+#menu__toggle{
+	display: none;
+}
+#inline {
+   position: relative;
+   width:79.5%;
+   height: auto;
+   margin: 0 auto;
+   background:#FFF;
+   padding:27px;
+   margin-left: 0%;
+   padding-right: 17.6%;
+   background-color: #6C1818;
+   z-index: 2;
+   padding-bottom: 60px;
+}
+.txt {
+   display:inline-block;
+   color:#676767;
+   width: 26.5%;
+   margin-bottom:10px;
+   border:1px solid #BB7D5A;
+   padding:5px 9px;
+   font-size:15px!important;
+   line-height:1.4em;
+}
+.txtarea {
+   display:inline-block;
+   color:#676767;
+   width:86%;
+   margin-bottom:10px;
+   border:1px solid #CCC;
+   padding:5px 9px;
+   font-size:15px!important;
+   line-height:1.4em;
+   height:80px;
+}
+.txt:focus, .txtarea:focus {
+   border-style:solid;
+   border-color:#BABABA;
+   color:#444;
+}
+input.error, textarea.error {
+    border-color:#973D3D;
+    border-style:solid;
+    background:#F0BEBE;
+    color:#A35959;
+}
+input.error:focus, textarea.error:focus {
+    border-color:#973D3D;
+    color:#A35959;
+}
+#send { 
+    color:#FFFFFF;
+    display:block;
+    cursor:pointer;
+    padding:5px;
+    font-size:1.2em;
+    border:solid 1px #B07D5A;
+    border-radius:2px;
+    background: #B07D5A;
+    width:210px;
+}
+#send:hover {
+    background:#979797;
+}
+/*
+Форма обратной связи
+*/
+/***********************/
+/*глобальные псевдоактиваторы*/
+/*для текста*/
+.--ident{
+	text-indent: 20px;
+}
+/***********************/
+/*глобальные селекторы*/
+body{
+	background-color: black;
+	font-family: 'Calibri';
+	color: white;
+}
+a{
+	text-decoration: none;
+	list-style-type: none;
+	color: white;
+}
+/*контейнер для главного изображения*/
+.main{
+position: relative;
+background-color: none;
+border: 1px solid red;
+grid-column-start:1;
+grid-column-end: 4;
+grid-row-start: 1;
+grid-row-end: 2;
+}
+/*позиционирование главного изображения*/
+.main_image{
+	position: relative;
+	display: block;
+	grid-column-start:1;
+ grid-column-end: 4;
+ grid-row-start: 1;
+ grid-row-end: 2;
+}
+/*размеры главного изображения*/
+.main_image > img{
+	position: relative;
+width: 100%;
+height: 100%;
+display: block;
+}
+.main_text-image{
+	position: absolute;
+	width: 100%;
+	height: auto;
+	font-size: 3.3em;
+	z-index: 2;
+font-family: 'Roboto Condensed', sans-serif;
+letter-spacing: 20px;
+text-align: center;
+top: 10%;
+color: #BCA770;
+}
+/*секция с основным контентом*/
+.wrap{
+	position: relative;
+	left: 125px;
+	position: relative;
+	display: grid;
+	grid-template-columns: 120px 54.8% 24%;
+	grid-template-rows: auto 60px auto auto;
+}
+/*свойства для главного меню*/
+.main_menu{
+	grid-column-start: 1; 
+	grid-column-end: 4; 
+	grid-row-start: 2; 
+	grid-row-end: 3; 
+	background-color: black;
+	display: flex;
+	justify-content: center;
+}
+/*свойства самого списка*/
+.main_menu > ul{
+position: relative;
+list-style-type: none;
+display: flex;
+justify-content: space-between;
+}
+/*свойства для пунктов главного меню*/
+.main_menu > ul > a > li{
+	height: auto;
+}
+/*свойство для подчеркнутой линии активного пункта*/
+.main_menu > ul > a > li{
+    line-height: 1;
+    position:relative;
+}
+.main_menu > ul > a > li:after {
+	   top: 20px;
+    background-color: white;
+    display: block;
+    content: "";
+    height: 2px;
+    width: 0%;
+    left:50%;
+    position:absolute;
+    -webkit-transition: width .3s ease-in-out;
+    -moz--transition: width .3s ease-in-out;
+    transition: width .3s ease-in-out;
+    -webkit-transform:translateX(-50%);
+    -moz-transform:translateX(-50%);
+    transform:translateX(-50%);
+}
+.main_menu > ul > a >li:hover:after,
+.main_menu > ul > a >li:focus:after {
+    width: 100%;
+}
+.active{
+	color: #BB7D5A;
+}
+.active:hover{
+color: white;
+}
+.main_menu_mobile{
+	display: none;
+}
+.post-head{
+	display: none;
+}
+.post-delimiter{
+	display: none;
+}
+.post-social-menu{
+	display: none;
+}
+.post-comment-menu{
+	display: none;
+}
+/*свойства для ссылок главного меню*/
+.main_menu > ul > a{
+	margin-left: 10px;
+ margin-right: 10px;
+}
+/*эффект при наведении на пункт главного меню*/
+.main_menu > ul > a:hover{
+height: 30px;
+color: #BB7D5A;
+}
+/*правое боковое меню*/
+.right_dop_menu{
+	grid-column-start: 3; 
+	grid-column-end: 4; 
+	grid-row-start: 3; 
+	grid-row-end: 4; 
+	background-color: #2C0202;
+	color:#BB7D5A;
+	z-index: 2;
+}
+/*колонка для аватара автора*/
+.author_column{
+	grid-column-start: 1;
+	grid-column-end: 2;
+	grid-row-start: 3;
+	grid-row-end: 4;
+	background-color: #6C1818;
+}
+/*оболочка для секции с записями*/
+.main_wrap-text{
+	position: relative;
+	grid-column-start: 2;
+	grid-column-end: 3;
+	grid-row-start: 3;
+	grid-row-end: 4;
+	background-color: #430B0B;
+	color:#BB7D5A;
+}
+/*спецификатор для всех постов*/
+.post{
+	position: relative;
+	width: 100%;
+}
+/*дополнительный контекст для поста*/
+.post-context{
+	position: relative;
+	left: 20px;
+}
+/*контент поста*/
+.author-post{
+	position: relative;
+	width: 95%;
+	height: auto;
+	border: 2px solid #B52828;
+	left: 15px;
+	padding-left: 10px;
+}
+/*аватар автора поста*/
+.author_column-img{
+	position: absolute;
+	width: 115px;
+	height: 150px;
+	left: -135px;	
+	border-top: 2px solid #B52828;
+	border-bottom: 2px solid #B52828;
+}
+/*свойства для картинки аватара*/
+.author_column-img > img{
+	position: absolute;
+	left: 0px;
+ width: 100%;
+	height: 100%;
+	object-fit: cover; /*свойство для вписания 
+	изображения в окно контейнера*/
+}
+/****************************/
+/*локальные псевдоактиваторы*/
+/*для текста заголовка*/
+.--h1_post{
+width: 100%;
+height: 50px;
+left: 140px;
+font-style: normal;
+font-weight: bold;
+font-size: 30px;
+line-height: 110.6%;
+color: #BB7D5A;
+}
+/*для текста самой записи*/
+.--text_post{
+	position: relative;
+width: 95%;
+height: auto;
+left: 15px;
+padding-bottom: 10px;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 110.6%;
+color: #BB7D5A;
+}
+/******************************/
+/*Автор:*/
+.author_profile_link{
+	position: relative;
+width: 20%;
+height: 18px;
+left: -3px;
+font-style: normal;
+font-weight: normal;
+font-size: 1em;
+line-height: 110.6%;
+color: #EACE87;
+}
+/*ссылка на автора и него ник*/
+.author_Nik-Name{
+	position: relative;
+color: #BB7D5A;
+left: 5px;
+font-style: italic;
+}
+/*анимация волны при наведении*/
+.author_Nik-Name:hover{
+	 background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='squiggle-link' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 20 4'%3E%3Cstyle type='text/css'%3E.squiggle{animation:shift .3s linear infinite;}@keyframes shift {from {transform:translateX(0);}to {transform:translateX(-20px);}}%3C/style%3E%3Cpath fill='none' stroke='%23453886' stroke-width='2' class='squiggle' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E");
+  background-position: bottom;
+  background-repeat: repeat-x;
+  background-size: 20%;
+  border-bottom: 0;
+  padding-bottom: .3em;
+  text-decoration: none;
+  color: #D59774;
+}
+/*блок с временем и датой выпуска поста*/
+.datatime_block{
+position: relative;
+width: 25%;
+height: 20px;
+left: 74%;
+top: -30px;
+font-style: italic;
+font-weight: normal;
+font-size: 1em;
+line-height: 110.6%;
+color: #BB7D5A;
+}
+/*оболочка для изображения в посте*/
+.post-image{
+padding-top: 20px;
+position: relative;
+display: table;
+margin: 0 auto;
+width: 95%;
+}
+/*свойства изображения для поста*/
+.post-image > img{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	left: -20px;
+}
+/*описание картинки*/
+.text-image{
+	position: relative;
+	width: 100%;
+height: auto;
+left: 0px;
+text-align: center;
+font-style: italic;
+font-weight: normal;
+font-size: 16px;
+line-height: 110.6%;
+color: #BB7D5A;
+}
+/*оболочка для видео*/
+.post-video{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	padding-top: 15px;
+}
+/*свойства для видео*/
+.post-video>video{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	left: -20px;
+}
+/*форма обратной связи*/
+.form_output{
+	margin-top: 20px;
+	width: 100%;
+	height: 100%;
+}
+.dot{
+	background-color:#B52828;
+	border: #B52828;
+	height: 10px;
+	width: 95%;
+}
+
+.delimiter{
+	position: relative;
+	width: 100%;
+	height: 12px;
+	background: #B52828;
+	border: none;
+}
+.comment-block{
+position: relative;
+}
+.comment{
+position: relative;
+overflow: scroll;
+overflow-x:hidden;
+width: 90%;
+left: 50px;
+height: 300px;
+top: 10px;
+}
+.author-comment{
+position: relative;
+width: auto;
+height: 20px;
+left: 0px;
+font-style: normal;
+font-weight: bold;
+font-size: 15px;
+line-height: 110.6%;
+color: #BB7D5A;
+}
+.container-comment{
+position: relative;
+display: inline-flex;
+width: 100%;
+height: auto;
+left: 0px;
+top: 0px;
+}
+.author-avatar{
+	position: relative;
+}
+.text-comment{
+	top: -10px;
+	font-style: italic;
+	position: relative;
+	left: 20px;
+	width: 88%;
+	height: auto;
+	float: right;
+}
+.delimiter-comment{
+top: auto;
+position: relative;
+background-color: #B52828;
+border: none;
+height: 3px;
+width: 100%;
+	}
+footer{
+position: relative;
+background-color:#360909;
+grid-column-start:1;
+grid-column-end: 4;
+grid-row-start: 4;
+grid-row-end: 5;
+}
+.social-icons{
+	position: relative;
+	padding-top: 25px;
+	padding-left: 150px;
+	float: left;
+	height: auto;
+	padding-bottom: 25px;
+}
+.social-icons > a > img{
+	position: relative;
+	margin-right: 10px;
+}
+::-webkit-scrollbar {
+    width: 12px;
+ background-color: none;
+}
+::-webkit-scrollbar-track {
+	background-color: #6C1818;
+}
+::-webkit-scrollbar-thumb {
+	border-radius: 20px;
+ background-color: #2A0707;
+}
+::-webkit-scrollbar-button{
+	background-color: #B52828;
+}
+::-webkit-resizer{
+	background-color: #B52828;
+	border-radius: 20px;
+}
+/*************************/
+/*свойства для раскрывающегося списка*/
+
+#menu_body li ul{
+	display: none;
+	}
+#menu_body li:hover ul, #menu_body li.over ul {
+	display: block;
+	}
+ #menu_body{
+ 	position: relative;
+    width: 110%;
+    height: auto;
+    left: -40px;
+    }
+#menu_body a{
+	display: block;
+	width: 100%;
+	height: 30px;
+	text-align: center;
+	font-weight: 600;
+	} 
+#menu_body ul li {
+    list-style-type: none;
+    border-bottom: 1px solid #B52828;
+    padding-left: 0px;
+    width: 100%;  
+    	color: #BB7D5A; 
+     } 
+#menu_body ul li a {
+    text-decoration: none;
+	font-size: 115%;
+	color: #BB7D5A;
+    } 
+
+#menu_body ul li a:hover {
+    text-decoration: none;
+	   background:#430B0B;
+    } 
+
+#menu_body ul li ul li {
+    border: 0;
+    list-style-type: none;
+    list-style-position: inside;
+	background:#550F0F;
+		color: #BB7D5A;
+		border-bottom: 1px solid #B52828;
+    } 
+
+#menu_body ul li ul{
+	position: relative;
+    left: -40px;
+    width: 100%;
+    color: #BB7D5A;
+    }
+#part > li{
+	display: none;
+}
+.active_li:hover #part > li{
+display: block;
+background-color: #6C1818;
+border-bottom: 1px solid #2C0202;
+}
+#part > li > a{
+position: relative;
+text-align: left;
+font-weight: 300;
+font-size: 16px;
+height: auto;
+}
+#part > li > a:hover{
+	color: white;
+}
+.recent-files{
+position: relative;
+width: 100%;
+height: auto;
+}
+.recent-drafts{
+	margin-top: 30px;
+	position: relative;
+	width: 100%;
+	height: auto;
+	background: #550F0F;
+}
+.recent-drafts > a{
+	color: #BB7D5A;
+}
+.recent-drafts_zag{
+	position: relative;
+	width: 100%;
+	height: auto;
+	background: #430B0B;
+	text-align: center;
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 30px;
+	padding-bottom: 5px;
+}
+.shell{
+	position: relative;
+	margin-top: 20px;
+	left: 20px;
+	margin-right: 20px;
+	display: inline-block;
+	width: 90px;
+	height: 120px;
+background: #100F0F;
+box-shadow: 0px 4px 4px #2F0404;
+}
+.shell > p{
+	position: relative;
+	width: 100%;
+	height: 20px;
+	text-align: center;
+}
+.recent-drafts-delimiter{
+	top: 30px;
+	position: relative;
+	width: 99%;
+	border: 1px solid #982121;
+box-shadow: 0px 4px 20px #380707;
+}
+.recent-drafts-fulllink{
+	padding-top: 30px;
+	position: relative;
+	width: 100%;
+	color: #2D9CDB;
+	height: auto;
+	text-align: center;
+	padding-bottom: 10px;
+}
+.recent-drafts-fulllink > a{
+	color: #2D9CDB;
+	font-size: 15px;
+	height: auto;
+}
+.recent-drafts-fulllink > a:hover{
+color: white;
+}
+.recent-document{
+	position: relative;
+	margin-top: 30px;
+	width: 100%;
+	height: auto;
+	background-color: #550F0F;
+	word-wrap: break-word;
+}
+.shell-document{
+	position: relative;
+	top: 20px;
+	left: 20px;
+	margin-right: 20px;
+	display: inline-flex;
+	width: 90px;
+	height: auto;
+}
+.recent-document-description{
+	position: relative;
+	width: 100%;
+	height: auto;
+	text-align: center;
+}
+.recent-document-description > a{
+	color: #BB7D5A;
+}
+.recent-document_name{
+	position: relative;
+	width: 100%;
+	top: -10px;
+	height: auto;
+	font-weight: 600;
+	font-size: 17px;
+	word-wrap: break-word;
+}
+.recent-document_datatime{
+	position: relative;
+	width: 100%;
+	top: -15px;
+	font-style: italic;
+	color: #D9C6C6;
+	font-size: 15px;
+	height: auto;
+}
+.recent-document-delemiter{
+	position: relative;
+	width: 99%;
+	height: auto;
+	border: 1px solid #982121;
+ box-shadow: 0px 4px 20px #380707;
+}
+.recent-document-fulllink{
+	position: relative;
+	width: 100%;
+	color: #2D9CDB;
+	height: auto;
+	text-align: center;
+	padding-bottom: 10px;
+}
+.recent-document-fulllink > a{
+	font-size: 15px;
+	color: #2D9CDB;
+}
+.recent-document-fulllink > a:hover{
+color: white;
+}
+.recent-photo{
+	position: relative;
+	margin-top: 30px;
+	width: 100%;
+	height: auto;
+	background-color:#550F0F;
+}
+.recent-photo-zag{
+	position: relative;
+	width: 100%;
+	height: auto;
+	background: #430B0B;
+	text-align: center;
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 30px;
+	padding-bottom: 5px;
+}
+.recent-photo-wrap{
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+
+}
+.recent-photo-wrap > a:hover .recent-photo-album > img{
+	transition: 1s;
+	width: 140%;
+	height: 140%;
+}
+.recent-photo-wrap > a:hover .recent-photo-album > p{
+	transition: 1s;
+	top: 150px;
+	color: #060606;
+}
+.recent-photo-album{
+	position: relative;
+	width: 95%;
+	height: 185px;
+	background: linear-gradient(180deg, 
+		rgba(37, 37, 37, 0) 0%, 
+		rgba(0, 0, 0, 0.71) 100%),
+	#232323;
+ margin-left: 5px;
+ margin-right: 5px;
+ overflow: hidden;
+ opacity: right;
+}
+.recent-photo-album > img{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	top: -217px;
+	opacity: 0.8;
+}
+.recent-photo-album > p{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	top: 130px;
+	color: white;
+	z-index: 3;
+}
+.recent-mediafiles{
+	position: relative;
+	margin-top: 30px;
+	width: 100%;
+	height: auto;
+	background-color:#550F0F;
+}
+.recent-document-description > a:hover{
+	transition: .3s;
+color: white;
+}
+.recent-marker{
+	position: relative;
+	margin-top: 30px;
+	width: 100%;
+	height: auto;
+	background-color:#550F0F;
+}
+.recent-mediafiles-flex-wrap{
+	position: relative;
+	display: flex;
+	height: auto;
+	justify-content: space-between;
+}
+.column{
+	position: relative;
+	width: 100%;
+	height: auto;
+	text-align: center;
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
+.column > a{
+	position: relative;
+	width: 100%;
+	color: #2D9CDB;
+	font-weight: 100;
+	height: auto;
+}
+.column > a:hover{
+	background-color: rgb(45, 156, 219, 0.3);
+	color: white;
+}
+/***********************/
+/**зарезервированные 
+псевдоактиваторы для ссылок*/
+/*
+--color-link-section\activate (--c-l-s) - стилизует ссылку
+при активации любой ссылки вида section
+*/
+.--c-l-s:hover .shell > p{
+		transition: .3s;
+	color: white;
+}
+.--c-l-s:hover .shell{
+	transition: .3s;
+	background-color: #060606;
+}
+/*
+/*--color-link-document-wrap (--c-l-d-w) -стилизует иконку документа
+и ссылку на сам файл при наведении*/ 
+.--c-l-d-w > a:hover{
+	transition: .3s;
+	color: white;
+}
+.--c-l-d-w > a > img:hover{
+		transition: .3s;
+	background-color: rgb(0, 0, 0, 0.4);
+}
+/*--color-wrap-photo-album (--c-w-p-a) -стилизует фотоальбом 
+на главной странице*/
+.main_menu_mobile{
+	display: none;
+}
+.head-site-mobile{
+	display: none;
+}
+.wrap-title{
+	display: none;
+}
