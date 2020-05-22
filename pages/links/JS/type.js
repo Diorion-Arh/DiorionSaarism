@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 var id_menu = new Array('razdel1','razdel2','razdel3');
 startList = function allclose() {
 	for (i=0; i < id_menu.length; i++){
@@ -17,3 +18,24 @@ function openMenu(id){
 	}
 }
 window.onload=startList;
+=======
+var id_menu = new Array('razdel1','razdel2','razdel3');
+startList = function allclose() {
+	for (i=0; i < id_menu.length; i++){
+		document.getElementById(id_menu[i]).style.display = "none";
+	}
+}
+function openMenu(id){
+	for (i=0; i < id_menu.length; i++){
+		if (id != id_menu[i]){
+			document.getElementById(id_menu[i]).style.display = "none";
+		}
+	}
+	if (document.getElementById(id).style.display == "block"){
+		document.getElementById(id).style.display = "none";
+	}else{
+		document.getElementById(id).style.display = "block";
+	}
+}
+window.onload=startList;
+>>>>>>> b6054d31b5e68785875f70feeae71d7a059b021e

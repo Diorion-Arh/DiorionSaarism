@@ -1,3 +1,9 @@
+<<<<<<< HEAD
 [0419/230439.778:ERROR:crash_report_database_win.cc(469)] failed to stat report
 [0419/230439.7^O
 
+=======
+[0419/230439.778:ERROR:crash_report_database_win.cc(469)] failed to stat report
+[0419/230439.7^O
+
+>>>>>>> b6054d31b5e68785875f70feeae71d7a059b021e
