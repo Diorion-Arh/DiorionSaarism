@@ -1,4 +1,12 @@
-<<<<<<< HEAD
+.wrap-link-post_wrap-content-name{
+	display: none;
+}
+.wrap-link-post_wrap-content-author-links{
+display: none;
+}
+.mobile-copuright{
+display: none;
+}
 /*
 Форма обратной связи
 */
@@ -1158,5 +1166,9 @@ font-style: italic;
 .wrap-link-post_wrap-content-desk > a{
 	list-style: none;
 	color: #2D9CDB;
->>>>>>> b6054d31b5e68785875f70feeae71d7a059b021e
+}
+/************************/
+/*fl теги*/
+.mobile-copuright{
+	display: none;
 }

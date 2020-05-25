@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 @media (max-width: 480px){
 /*
 Форма обратной связи
@@ -317,7 +316,7 @@ color: #BCA770;
 background: url(../icons/main-mobile-menu1.png) no-repeat center top;
 }
 .main_menu_mobile-2img{
-background: url(../icons/main-mobile-menu2.png) no-repeat center top;
+background: url(../icons/active.png) no-repeat center top;
 }
 .main_menu_mobile-3img{
 background: url(../icons/main-mobile-menu3.png) no-repeat center top;
@@ -408,9 +407,9 @@ background: url(../icons/main-mobile-menu12.png) no-repeat center top;
 	font-weight: 100;
 }
 .wrap-title{
-	top: 30px;
-	display: block;
 	position: relative;
+	top: 25px;
+	display: block;
 	color: white;
 	width: 100%;
 	height: 50px;
@@ -482,7 +481,7 @@ display: none;
 	padding-left: 20px; 
 	padding-top:20px;
 }
-.post-head-wrap-image > img{
+.post-head-wrap-image > a > img{
 width: 100%;
 height: 100%;
 object-fit: cover;
@@ -493,16 +492,20 @@ border-radius: 50px;
 	padding-left: 20px;
 	top: 20px;
 	height: auto;
-	width: 80%;                                                
+	width: 100%;                                                
 	color: #6C1818;
 	display: flex;
 }
 .post-head-span-text-block_username{
 	position: relative;
-	padding-left: 0px;
+	padding-left: 20px;
 	height: auto;
 	width: auto;                                                
 	color: #6C1818;
+}
+.post-head-span-text-block_username:hover{
+color: red;
+text-decoration: underline;
 }
 .post-head-span-text-block_datatime{
 	position: relative;
@@ -527,7 +530,7 @@ border-radius: 50px;
 	position: relative;
 width: 100%;
 height: auto;
-left: 0px;
+left: 5px;
 padding:0px;
 padding-top:10px;
 margin: 0px;
@@ -540,891 +543,9 @@ color: #6C1818;
 /*для текста самой записи*/
 .--text_post{
 	position: relative;
-width: 91%;
+width: 90%;
 height: auto;
-left: 0px;
-padding: 5px;
-padding-left: 15px;
-padding-right: 15px;
-font-size: 13px;
-line-height: 110.6%;
-color: black;
-font-family: 'Inter';
-}
-/******************************/
-/*Автор:*/
-.author_profile_link{
-	display: none;
-}
-/*ссылка на автора и него ник*/
-.author_Nik-Name{
-display: none;
-}
-/*анимация волны при наведении*/
-.author_Nik-Name:hover{
-	display: none;
-}
-/*блок с временем и датой выпуска поста*/
-.datatime_block{
-position: relative;
-width: 195px;
-height: auto;
-left: 50%;
-top: 0px;
-font-style: italic;
-font-weight: normal;
-font-size: 1em;
-line-height: 110.6%;
-color: #6C1818;
-}
-.post-delimiter{
-	position: relative;
-	background-color: #B52828;
-	width: 100%;
-	height: 10px;
-	margin: 0px;
-	padding: 0px;
-	border: none;
-	display: block;
-}
-.post-social-menu{
-	position: relative;
-	background-color: white;
-	display: inline-flex;
-	top: 2px;
-	width: 100%;
-	height: auto;
-	font-size: 14px;
-	padding-right: 0px;
-}
-.post-comment-icon{
-	position: relative;
-	width: 15px;
-	height: 15px;
-	background:url(../icons/mode_comment.png) no-repeat center;
-	left: 70%;
-}
-.post-quantity-comment{
-	position: relative;
-	width: auto;
-	height: 15px;
-	left: 70%;
-	text-align: center;
-	line-height: 15px;
-	color: black;
-	padding-left: 5px;
-	text-indent: 0px;
-	}
-.post-like-icon{
-	position: relative;
-	width: 15px;
-	height: 15px;
-	background: url(../icons/like.png) no-repeat center;
-		left: 70%;
-		padding-left: 15px;
-}
-.post-quantity-like{
-	position: relative;
-	width: auto;
-	height: 15px;
-	left: 70%;
-	text-align: center;
-	line-height: 15px;
-	color: black;
-	padding-left: 0px;
-	text-indent: 0px;
-}
-.post-quantity-like > span{
-	position: relative;
-	left: 5px;
-}
-.post-comment-menu{
-	position: relative;
-	width: 100%;
-	height: auto;
-	color: black;
-	background-color:#ECECEC;
-	display: grid;
-	grid-template-columns: 65px 45% 35%;
-	grid-template-rows: 15px auto auto;
-	font-size: 11px;
-	font-family: 'Inter';
-}
-.post-avatar-comment{
-	position: relative;
-	grid-column-start: 1;
-	grid-column-end: 2;
-	grid-row-start: 1;
-	grid-row-end: 3;
-	background: url(../icons/ava-comment1.png) no-repeat center;
-	height: 65px;
-}
-.post-avtor-comment{
-	position: relative;
-	grid-column-start: 2;
-	grid-column-end: 3;
-	grid-row-start: 1;
-	grid-row-end: 2;
-	color: #B52828;
-	text-align: left;
-	padding-left: 5px;
-}
-.post-comment-datatime{
-	position: relative;
-	grid-column-start: 3;
-	grid-column-end: 4;
-	grid-row-start: 1;
-	grid-row-end: 2;
-	color: #6B6B6B;
-	text-align: right;
-	padding-right: 0px;
-}
-.post-comment-text{
-	position: relative;
-	grid-column-start: 2;
-	grid-column-end: 4;
-	grid-row-start: 2;
-	grid-row-end: 3;
-	text-align: left;
-	padding-left: 10px;
-	padding-bottom: 10px;
-}
-.post-comment-submit{
-	width: 100%;
-	height: auto;
-	position: relative;
-	display: grid;
-	grid-template-columns: 30% 32% 35%;
-	grid-template-rows: auto auto auto;
-	grid-row-gap: 5px;
-	background-color: #ECECEC;
-}
-.post-comment-submit > span{
-	position: relative;
-	grid-column-start: 1;
-	grid-column-end: 2;
-	grid-row-start: 1;
-	grid-row-end: 3;
-	margin: 0px;
-	color: red;
-	font-size: 10px;
-	margin-left: 5px;
-}
-.post-comment-submit-email{
-	grid-column-start: 2;
-	grid-column-end: 4;
-	grid-row-start: 1;
-	grid-row-end: 2;
-	margin-left: 5px;
-	height: 20px;
-}
-.post-comment-submit-number{
-	grid-column-start: 2;
-	grid-column-end: 3;
-	grid-row-start: 2;
-	grid-row-end: 3;
-	margin-left: 5px;
-	height: 20px;
-}
-.post-comment-submit-nikname{
-	grid-column-start: 3;
-	grid-column-end: 4;
-	grid-row-start: 2;
-	grid-row-end: 3;
-margin-left: 5px;
-height: 20px;
-}
-.post-comment-submit-text{
-	grid-column-start: 1;
-	grid-column-end: 4;
-	grid-row-start: 3;
-	grid-row-end: 4;
-	height: 60px;
-	margin-bottom: 5px;
-	margin-left: 5px;
-}
-/*оболочка для изображения в посте*/
-.post-image{position: relative;
-padding-top: 20px;
-padding-left:  0px;
-padding-right: 0px;
-width: 110%;
-margin: 0px;
-left: -15px;
-}
-/*свойства изображения для поста*/
-.post-image > img{
-	position: relative;
-	width: 100%;
-	height: 100%;
-}
-/*описание картинки*/
-.text-image{
-	position: relative;
-	width: 100%;
-height: auto;
-left: 0px;
-top: 5px;
-text-align: center;
-font-style: italic;
-font-weight: normal;
-font-size: 12px;
-line-height: 110.6%;
-color: #BB7D5A;
-font-family: 'Inter';
-margin: 0;
-padding: 0;
-}
-/*оболочка для видео*/
-.post-video{
-	position: relative;
-	width: 111%;
-	height: 100%;
-	padding: 0px;
-	left: -20px;
-	margin: 0px;
-}
-/*свойства для видео*/
-.post-video>video{
-	position: relative;
-	width: 100%;
-	height: 100%;
-	left: -20px;
-	padding: 0px;
-	margin: 0px;
-}
-/*форма обратной связи*/
-.form_output{
-	margin-top: 20px;
-	width: 100%;
-	height: 100%;
-}
-.dot{
-	background-color:#B52828;
-	border: #B52828;
-	height: 10px;
-	width: 95%;
-}
-.delimiter{
-	position: relative;
-	width: 100%;
-	height: 12px;
-	background: #B52828;
-	border: none;
-}
-.comment-block{
-	display: none;
-}
-.comment{
-	display: none;
-}
-.author-comment{
-	display: none;
-}
-.container-comment{
-	display: none;
-}
-.author-avatar{
-	display: none;
-}
-.text-comment{
-	display: none;
-}
-.delimiter-comment{
-	display: none;
-	}
-footer{
-position: relative;
-background-color: #360909;
-width: 100%;
-margin: 0px;
-padding: 0px;
-height: 150px;
-}
-.social-icons{
-	width: 100%;
-	display: flex;
-	justify-content: center;
-	position: relative;
-	margin-left: 0px;
-padding-left:0px;
-	float: left;
-	height: auto;
-}
-.social-icons > a > img{
-	position: relative;
-	margin-right: 10px;
-}
-::-webkit-scrollbar {
-    width: 12px;
- background-color: none;
-}
-::-webkit-scrollbar-track {
-	background-color: #6C1818;
-}
-::-webkit-scrollbar-thumb {
-	border-radius: 20px;
- background-color: #2A0707;
-}
-::-webkit-scrollbar-button{
-	background-color: #B52828;
-}
-::-webkit-resizer{
-	background-color: #B52828;
-	border-radius: 20px;
-}
-/*************************/
-/*свойства для раскрывающегося списка*/
-#menu_body li ul{
-	display: none;
-	}
-#menu_body{
-	display: none;
-=======
-@media (max-width: 480px){
-/*
-Форма обратной связи
-*/
-.form_output{
-	display: none;
-}
-.form-output-section-mobile{
-	display: block;
-	position: relative;
-	width: 100%;
-	height: auto;
-	background-color: #430B0B;
-	padding-bottom: 50px;
-}
-.form-output-block-mobile{
-	position: relative;
-width: 95%;
-height: auto;
-background-color: #6C1818;
-padding-left: 0px;
 left: 10px;
-}
-.form-output-mobile{
-	top: 0px;
-	position: relative;
-	display: grid;
-	grid-template-columns: 40% 60%;
-	grid-template-rows: 40px 40px 40px 40px auto 40px;
-	grid-row-gap: 20px;
-	width: 100%;
-	height: auto;
-}
-.form-output-zag-mobile{
-display: initial;
-grid-column-start: 1;
-grid-column-end: 3;
-grid-row-start: 1;
-grid-row-end: 2;
-background-color: white;
-font-size: 28px;
-color: #6C1818;
-font-weight: 600;
-text-indent: 20px;
-height: auto;
-}
-.delimiter{
-	top: -8px;
-}
-.form-output-zag-desktop{
-	display: none;
-}
-#inline{
-display: none;
-}
-.txt-1{
-	position: relative;
-grid-column-start: 2;
-grid-column-end: 3;
-grid-row-start: 2;
-grid-row-end: 3;
-font-size:16px!important;
-left: -20px;
-padding: 0px;
-margin: 0px;
-}
-.txt-2{
-	position: relative;
-   color:#676767;
-   font-size:16px!important;
-   line-height:1.4em;
-   grid-column-start: 2;
-   grid-column-end: 3;
-   grid-row-start: 3;
-   grid-row-end: 4;
-   left: -20px;
-   padding: 0px;
-margin: 0px;
-}
-.txt-3{
-	position: relative;
-grid-column-start: 2;
-grid-column-end: 3;
-grid-row-start: 4;
-grid-row-end: 5;
-   color:#676767;
-   font-size:16px!important;
-   line-height:1.4em;
-   left: -20px;
-   padding: 0px;
-margin: 0px;
-}
-.txtarea-msg{
-	position: relative;
-   color:#676767;
-   width:90%;
-   font-size:15px!important;
-   line-height:1.4em;
-  grid-column-start: 1;
-grid-column-end: 3;
-grid-row-start: 5;
-grid-row-end: 6;
-padding: 0px;
-margin: 0px;
-text-indent: 5px;
-left: 22px;
-height: 100px;
-}
-.txt:focus, .txtarea:focus {
-   border-style:solid;
-   border-color:#BABABA;
-   color:#444;
-}
-input.error, textarea.error {
-    border-color:#973D3D;
-    border-style:solid;
-    background:#F0BEBE;
-    color:#A35959;
-}
-input.error:focus, textarea.error:focus {
-    border-color:#973D3D;
-    color:#A35959;
-}
-.form-output-click-mobile{ 
-	position: relative;
-    color:#FFFFFF;
-    display:block;
-    cursor:pointer;
-    font-size:1.0em;
-    border:solid 1px #B07D5A;
-    border-radius:2px;
-    background: #B07D5A;
-  grid-column-start: 2;
-grid-column-end: 3;
-grid-row-start: 6;
-grid-row-end: 7;
-padding: 0;
-margin: 0;
-left: -20px;
-}
-.form-output-click-mobile:hover {
-    background:#979797;
-}
-.end-message{
-	position: relative;
-	border-radius: 20px;
-	width: 90%;
-	height: 20px;
-	background-color: #360909;
-	color: white;
-	margin-top: 50px;
-	left: 20px;
-	font-size: 12px;
-	text-align: center;
-	letter-spacing: 0.9px;
-	font-weight: 100;
-	line-height: 18px;
-}
-.delimiter-end{
-	position: relative;
-	border: none;
-	background-color: #B52828;
-	height: 8px;
-	width: 100%;
-	margin-top: 50px;
-}
-.copyright{
-	position: relative;
-	height: 60px;
-	width: 100%;
-	color: white;
-}
-.copyright-author{
-	position: relative;
-	height: auto;
-	width: 100%;
-	text-align: center;
-	font-size: 12px;
-}
-.copyright-information{
-	position: relative;
-	height: auto;
-	width: 100%;
-	text-align: center;
-	font-size: 11px;
-}
-.delimiter-end-copyright{
-	position: relative;
-	border: none;
-	background-color: #982121;
-	height: 5px;
-	width: 100%;
-	margin-top: 0px;
-	box-shadow: 0px 15px 20px black;
-}
-/*
-Форма обратной связи
-*/
-/***********************/
-/*глобальные псевдоактиваторы мобильной версии*/
-/*для текста*/
-.--ident{
-	text-indent: 20px;
-}
-/***********************/
-/*глобальные селекторы*/
-body{
-	background-color: black;
-	font-family: 'Calibri';
-	color: white;
-	padding: 0px;
-	margin: 0px;
-	right: 0px;
-}
-html{
-	padding:0px;
-	margin: 0px;
-	right: 0px;
-	background-color: black;
-}
-a{
-	text-decoration: none;
-	list-style-type: none;
-	color: white;
-}
-/*контейнер для бокового меню*/
-.main{
-display: block;
-left: 110%;
-margin: 0;
-list-style: none;
-text-align: center;
-position: fixed;
-width: 290px;
-height: 800px;
-top: 0px;
-z-index: 2;
-background-size: cover;
-background: url(../images/0jvg0kFj66M.jpg) no-repeat center top;
-}
-#menu__toggle{
-	display: block;
-}
-#menu__toggle:checked ~ .menu__btn > span {
-  transform: rotate(45deg);
-}
-#menu__toggle:checked ~ .menu__btn > span::before {
-  top: 0;
-  transform: rotate(0);
-}
-#menu__toggle:checked ~ .menu__btn > span::after {
-  top: 0;
-  transform: rotate(90deg);
-}
-#menu__toggle:checked ~ .main{
-	transition: 0.3s;
-  left: 40%;
-}
-/*позиционирование главного изображения*/
-.main_image{
-	display: none;
-}
-/*размеры главного изображения*/
-.main_image > img{
-	display: none;
-}
-.main_text-image{
-	position: absolute;
-	width: 100%;
-	height: auto;
-	font-size: 3.3em;
-font-family: 'Roboto Condensed', sans-serif;
-letter-spacing: 20px;
-text-align: center;
-top: 10%;
-color: #BCA770;
-}
-/*секция с основным контентом*/
-.wrap{
-	position: relative;
-	left: 0px;
-	display: block;
-	width: 100%;
-	margin-top:20px;
-}
-/*скрытие главного меню*/
-.main_menu{
-	display: none;
-}
-.main_menu_mobile{
-	position: relative;
-	width: 100%;
-	height: 100%;
-	display: block;
-}
-.main_menu_mobile > ul{
-	margin-top: 100px;
-	position: relative;
-	width: 100%;
-	height: 300px;
-	display: flex;
-	flex-direction: column;
-	vertical-align: center;
-	justify-content: space-between;
-}
-.main_menu_mobile > ul > a > li{
-	position: relative;
-	height: 40px;
-	left: -40px;
-	margin: -6px;
-}
-.main_menu_mobile > ul > a > li:hover{
-	background-color: white;
-}
-.main_menu_mobile-1img{
-background: url(../icons/main-mobile-menu1.png) no-repeat center top;
-}
-.main_menu_mobile-2img{
-background: url(../icons/main-mobile-menu2.png) no-repeat center top;
-}
-.main_menu_mobile-3img{
-background: url(../icons/main-mobile-menu3.png) no-repeat center top;
-}
-.main_menu_mobile-4img{
-background: url(../icons/main-mobile-menu4.png) no-repeat center top;
-}
-.main_menu_mobile-5img{
-background: url(../icons/main-mobile-menu5.png) no-repeat center top;
-}
-.main_menu_mobile-6img{
-background: url(../icons/main-mobile-menu6.png) no-repeat center top;
-}
-.main_menu_mobile-7img{
-background: url(../icons/main-mobile-menu7.png) no-repeat center top;
-}
-.main_menu_mobile-8img{
-background: url(../icons/main-mobile-menu8.png) no-repeat center top;
-}
-.main_menu_mobile-9img{
-background: url(../icons/main-mobile-menu9.png) no-repeat center top;
-}
-.main_menu_mobile-10img{
-background: url(../icons/main-mobile-menu10.png) no-repeat center top;
-}
-.main_menu_mobile-11img{
-background: url(../icons/main-mobile-menu11.png) no-repeat center top;
-}
-.main_menu_mobile-12img{
-background: url(../icons/main-mobile-menu12.png) no-repeat center top;
-}
-/*правое боковое меню*/
-.right_dop_menu{
-	display: none;
-}
-.head-site-mobile{
-	position: fixed;
-	width: 100%;
-	height: 55px;
-	background-color: #6C1818;
-	z-index: 2;
-	top: 0px;
-	display: block;
-}
-/* скрываем чекбокс */
-#menu__toggle {
-  opacity: 0;
-}
-/* стилизуем кнопку */
-.menu__btn{
-  display: flex; /* используем flex для центрирования содержимого */
-  align-items: center;  /* центрируем содержимое кнопки */
-  position: fixed;
-  top: 15px;
-  left: 91%;
-  width: 26px;
-  height: 26px;
-  cursor: pointer;
-  z-index: 50;
-}
-/* добавляем "гамбургер" */
-.menu__btn > span,
-.menu__btn > span::before,
-.menu__btn > span::after {
-  display: block;
-  position: absolute;
-  width: 100%;
-  height: 2px;
- background-color: white;
-}
-.menu__btn > span::before {
-	transition: 0.2s;
-  content: '';
-  top: -8px;
-}
-.menu__btn > span::after {
-		transition: 0.2s;
-  content: '';
-  top: 8px;
-}
-.head-site-mobile-logo{
-	position: relative;
- margin-left: 20px;
- top: 15px;
-	font-family: 'Roboto Condensed', sans-serif;
-	font-size:25px;
-	color: #BCA770;
-	font-weight: 100;
-}
-.wrap-title{
-	top: 30px;
-	display: block;
-	position: relative;
-	color: white;
-	width: 100%;
-	height: 50px;
-	background-color: black;
-	font-size: 30px;
-	text-align: center;
-	line-height: 60px;
-	font-weight: 100;
-}
-/*колонка для аватара автора*/
-.author_column{
-	display: none;
-}
-/*оболочка для секции с записями*/
-.main_wrap-text{
-	background-color: #430B0B;
-	color:#BB7D5A;
-	width: 100%;
-	padding: 0px;
-	margin: 0px;
-}
-/*спецификатор для всех постов*/
-.post{
-	position: relative;
-	background-color:white;
-	width: 100%;
-	padding: 0px;
-	margin: 0px;
-	display: block;
-	margin-top: 10px;
-}
-.post-head{
-	position: relative;
-	top: 10px;
-	display: block;
-}
-/*дополнительный контекст для поста*/
-.post-context{
-	position: relative;
- left:10px;
-	top: 10px;
-}
-	/*контент поста*/
-.author-post{
-	border: none;
-	padding: 0px;
-	margin: 0px;
-	left: 0px;
-	width: 100%;
-}
-/*аватар автора поста*/
-.author_column-img{
-	display: none;
-}
-/*свойства для картинки аватара*/
-.author_column-img > img{
-display: none;
-}
-.post-head{
-	position: relative;
-	width: 100%;
-	height: 100px;
-	display: inline-flex;
-}
-.post-head-wrap-image{
-	position: relative;
-	width: 60px;
-	height: 60px;
-	padding-left: 20px; 
-	padding-top:20px;
-}
-.post-head-wrap-image > img{
-width: 100%;
-height: 100%;
-object-fit: cover;
-border-radius: 50px;
-}
-.post-head-span-text-block{
-	position: relative;
-	padding-left: 20px;
-	top: 20px;
-	height: auto;
-	width: 80%;                                                
-	color: #6C1818;
-	display: flex;
-}
-.post-head-span-text-block_username{
-	position: relative;
-	padding-left: 0px;
-	height: auto;
-	width: auto;                                                
-	color: #6C1818;
-}
-.post-head-span-text-block_datatime{
-	position: relative;
-	padding-left: 30%;
-	height: auto;
-	width: auto;                                                
-	color: #6C1818;
-}
-.post-head-span-text-block_over{
-	position: relative;
-	padding-left: 10px;
-	height: 10px;
-	padding-top: 10px;
-	width: 30px;                                                
-	color: #6C1818;
-	background: url(../icons/more.png) no-repeat center;
-}
-/****************************/
-/*локальные псевдоактиваторы*/
-/*для текста заголовка*/
-.--h1_post{
-	position: relative;
-width: 100%;
-height: auto;
-left: 0px;
-padding:0px;
-padding-top:10px;
-margin: 0px;
-font-style: normal;
-font-weight: bold;
-font-size: 27px;
-line-height: 110.6%;
-color: #6C1818;
-}
-/*для текста самой записи*/
-.--text_post{
-	position: relative;
-width: 91%;
-height: auto;
-left: 0px;
 padding: 5px;
 padding-left: 15px;
 padding-right: 15px;
@@ -1432,6 +553,113 @@ font-size: 13px;
 line-height: 110.6%;
 color: black;
 font-family: 'Inter';
+}
+.wrap-link-post{
+	position: relative;
+width: 90%;
+height: auto;
+}
+.wrap-link-post_zag{
+	display: none;
+}
+.wrap-link-post_wrap-content-links{
+	position: relative;
+	width: 100%;
+	height: auto;
+	grid-template-columns: 78% 20%;
+	grid-template-rows: auto auto auto auto;
+	grid-column-gap: 10px;
+}
+.wrap-link-post_wrap-content-desk{
+	grid-row-start: 1;
+	grid-row-end: 1;
+	grid-column-start: 1;
+	grid-column-end: 1;
+	text-align: left;
+	text-indent: 0px;
+	top: 10px;
+	color: black;
+	left: 0px;
+	margin-left: 0px;
+}
+.wrap-link-post_wrap-content-name{
+	display: block;
+	grid-row-start: 2;
+	grid-row-end: 2;
+	grid-column-start: 1;
+	grid-column-end: 1;	
+	font-size: 20px;
+	text-align: left;
+	text-indent: 0px;
+}
+.wrap-link-post_wrap-content-name > a{
+	font-weight: 600;
+	color: #6C1818;
+}
+.wrap-link-post_wrap-content-name > a:hover{
+color: red;
+text-decoration: underline;
+}
+.wrap-link-post_wrap-content-hashtags{
+	grid-row-start: 3;
+	grid-row-end: 3;
+	grid-column-start: 1;
+	grid-column-end: 1;
+	text-indent: 0px;
+	color: black;
+}
+.wrap-link-post_wrap-content-hashtags > a:hover{
+	position: relative;
+	color: red;
+}
+.wrap-link-post_wrap-content-author-date{
+	grid-row-start: 4;
+	grid-row-end: 4;
+	grid-column-start: 2;
+	grid-column-end: 2;
+	text-align: center;
+	color: #FF6464;
+}
+.wrap-link-post_wrap-content-links_author_avatar{
+	grid-row-start: 1;
+	grid-row-end: 3;
+	grid-column-start: 2;
+	grid-column-end: 2;	
+	top: 0px;
+	margin: 0px;
+	padding: 0px;
+}
+.wrap-link-post_wrap-content-author-links{
+	display: block;
+	position: relative;
+	grid-row-start: 4;
+	grid-row-end: 4;
+	grid-column-start: 1;
+	grid-column-end: 1;
+}
+.wrap-link-post_wrap-content-author-links > a{
+	color: black;
+}
+.wrap-link-post_wrap-content-author-links > a:hover{
+	color: red;
+	text-decoration: underline;
+}
+.wrap-link-post_wrap-content-desk > a{
+	display: none;
+}
+.wrap-link-post_wrap-content-links_author_avatar > img{
+	border-radius: 0;
+	left: -20px;
+	padding: 0;
+	margin: 0;
+	top: 20px;
+}
+.wrap-link-post_wrap-content-links_menu{
+	display: none;
+}
+.wrap-link-post_delimiter{
+position: relative;
+margin-bottom: 0px;
 }
 /******************************/
 /*Автор:*/
@@ -1449,9 +677,9 @@ display: none;
 /*блок с временем и датой выпуска поста*/
 .datatime_block{
 position: relative;
-width: 195px;
+width: auto;
 height: auto;
-left: 50%;
+left: 55%;
 top: 0px;
 font-style: italic;
 font-weight: normal;
@@ -1459,117 +687,55 @@ font-size: 1em;
 line-height: 110.6%;
 color: #6C1818;
 }
-.post-delimiter{
+.mobile-icon-avatar{
 	position: relative;
-	background-color: #B52828;
+	left: 7px;
+	top: -10px;
+	width:70px;
+	height: 70px;
+}
+.mobile-icon-avatar > img{
 	width: 100%;
-	height: 10px;
-	margin: 0px;
-	padding: 0px;
-	border: none;
+	height: 100%;
+	object-fit: cover;
+	border-radius: 100px;
+}
+.post-delimiter{
 	display: block;
+	border: 5px solid #8B1B1B;
 }
 .post-social-menu{
-	position: relative;
-	background-color: white;
-	display: inline-flex;
-	top: 2px;
-	width: 100%;
-	height: auto;
-	font-size: 14px;
-	padding-right: 0px;
+display: none;
 }
 .post-comment-icon{
-	position: relative;
-	width: 15px;
-	height: 15px;
-	background:url(../icons/mode_comment.png) no-repeat center;
-	left: 70%;
+display: none;
 }
 .post-quantity-comment{
-	position: relative;
-	width: auto;
-	height: 15px;
-	left: 70%;
-	text-align: center;
-	line-height: 15px;
-	color: black;
-	padding-left: 5px;
-	text-indent: 0px;
+display: none;
 	}
 .post-like-icon{
-	position: relative;
-	width: 15px;
-	height: 15px;
-	background: url(../icons/like.png) no-repeat center;
-		left: 70%;
-		padding-left: 15px;
+display: none;
 }
 .post-quantity-like{
-	position: relative;
-	width: auto;
-	height: 15px;
-	left: 70%;
-	text-align: center;
-	line-height: 15px;
-	color: black;
-	padding-left: 0px;
-	text-indent: 0px;
+display: none;
 }
 .post-quantity-like > span{
-	position: relative;
-	left: 5px;
+display: none;
 }
 .post-comment-menu{
-	position: relative;
-	width: 100%;
-	height: auto;
-	color: black;
-	background-color:#ECECEC;
-	display: grid;
-	grid-template-columns: 65px 45% 35%;
-	grid-template-rows: 15px auto auto;
-	font-size: 11px;
-	font-family: 'Inter';
+display: none;
 }
 .post-avatar-comment{
-	position: relative;
-	grid-column-start: 1;
-	grid-column-end: 2;
-	grid-row-start: 1;
-	grid-row-end: 3;
-	background: url(../icons/ava-comment1.png) no-repeat center;
-	height: 65px;
+display: none;
 }
 .post-avtor-comment{
-	position: relative;
-	grid-column-start: 2;
-	grid-column-end: 3;
-	grid-row-start: 1;
-	grid-row-end: 2;
-	color: #B52828;
-	text-align: left;
-	padding-left: 5px;
+display: none;
 }
 .post-comment-datatime{
-	position: relative;
-	grid-column-start: 3;
-	grid-column-end: 4;
-	grid-row-start: 1;
-	grid-row-end: 2;
-	color: #6B6B6B;
-	text-align: right;
-	padding-right: 0px;
+display: none;
 }
 .post-comment-text{
-	position: relative;
-	grid-column-start: 2;
-	grid-column-end: 4;
-	grid-row-start: 2;
-	grid-row-end: 3;
-	text-align: left;
-	padding-left: 10px;
-	padding-bottom: 10px;
+display: none;
 }
 .post-comment-submit{
 	width: 100%;
@@ -1681,6 +847,23 @@ padding: 0;
 	width: 100%;
 	height: 100%;
 }
+.mobile-copuright{
+	padding-top: 20px;
+	display: block;
+	width: 100%;
+	height: 70px;
+	background: #6C1818;
+	text-align: center;
+	color: white;
+	font-weight: 100;
+}
+.mobile-copuright > p{
+	padding: 0px;
+	margin: 0px;
+}
+.mobile-delem{
+	border: 5px solid #B52828;
+}
 .dot{
 	background-color:#B52828;
 	border: #B52828;
@@ -1762,5 +945,5 @@ padding-left:0px;
 	}
 #menu_body{
 	display: none;
->>>>>>> b6054d31b5e68785875f70feeae71d7a059b021e
+}
 }
