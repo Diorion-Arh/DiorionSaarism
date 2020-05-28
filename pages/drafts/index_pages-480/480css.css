@@ -1,9 +1,82 @@
 @media (max-width: 480px){
+
+.datatime_block{
+	display: none;
+}
+.drafts-more-menu > a{
+position: relative;
+left: 0px;
+}
+.drafts-more-menu{
+	left: 90%;
+	padding: 0px;
+}
+.copy-block{
+	display: none;
+}
+.drafts-post-delimiter{
+	display: none;
+}
+.draft-S{
+	width: 100%;
+	padding-left: 0px;
+	left: 0px;
+		display: none;
+}
+#menu_drafts{
+	width: 100%;
+	left: 0px;
+	background: #947777;
+}
+.active_li_drafts{
+	position: relative;
+	background-image: url(../images/texture.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 108.9%;
+	padding: 0px;
+	left: -10px; 
+}
+.menu-w{
+	position: relative;
+	left: 0px;
+	padding-left: 0px;
+	width: 100%;
+}
+.zag-draft{
+	color: #8F1212;
+	font-style: normal;
+font-weight: normal;
+font-size: 24px;
+text-align: center;
+border-top: 1px solid #E5D9C5;
+border-bottom: none;
+border-right: none;
+border-left: none;
+width: 100%;
+line-height: 0px;
+height: 60px;
+padding-left: 20px;
+padding-right: 20px;
+}
+.resol > a{
+	left: 30px;
+}
+.resol{
+	position: relative;
+	background: #6E5454;
+	left: -30px;
+}
+.content-block-drafts{
+	padding-left: 50px;
+	padding-right: 20px;
+	color: #4B0808;
+	font-weight: normal;
+}
 /*
 Форма обратной связи
 */
 .form_output{
-	display: none;
 }
 .form-output-section-mobile{
 	display: block;
@@ -440,6 +513,7 @@ background: url(../icons/main-mobile-menu12.png) no-repeat center top;
 	margin: 0px;
 	display: block;
 	margin-top: 10px;
+	padding-bottom: 1px;
 }
 .post-head{
 	position: relative;

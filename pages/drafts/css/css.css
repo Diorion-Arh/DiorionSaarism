@@ -1,4 +1,5 @@
 .copy-block{
+	display: block;
 	position: relative;
 	top: -70px;
 	left: 500px;
@@ -45,6 +46,7 @@ font-weight: normal;
 font-size: 1em;
 line-height: 110.6%;
 color: #BB7D5A;
+display: block;
 }
 .date-draft{
 position: relative;
@@ -135,6 +137,7 @@ display: inline-flex;
 margin-bottom: 10px;
 }
 .drafts-post-delimiter{
+	display: block;
 	position: relative;
 	height: 1px;
 	border: none;
