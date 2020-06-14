@@ -806,15 +806,7 @@ color: #BB7D5A;
 /****************************/
 /*локальные псевдоактиваторы*/
 /*для текста заголовка*/
-.--h1_post{
-width: 100%;
-height: 50px;
-left: 140px;
-font-style: normal;
-font-weight: bold;
-font-size: 30px;
-line-height: 110.6%;
-color: #BB7D5A;
+
 }
 /*для текста самой записи*/
 .--text_post{
@@ -1068,6 +1060,11 @@ color: white;
 .wrap-title{
 	display: none;
 }
+.--h1_post:hover{
+color: white;
+transition-duration: 0.3s;
+cursor:default;
+}
 /**************************************/
 .wrap-link-post{
 position: relative;
@@ -1075,10 +1072,34 @@ width: 800px;
 height: auto;
 left:25px;
 }
+.recent-photo-zag:hover{
+color: white;
+cursor: default;
+transition-duration: .3s;
+}
 .wrap-link-post_zag{
 position: relative;
 margin-top: 0px;
 text-indent: 0px;
+}
+.wrap-link-post_zag:hover{
+color: white;
+transition-duration: 0.3s;
+cursor:default;
+}
+.wrap-link-post_wrap-content-desk:hover{
+color: white;
+transition-duration: 0.3s;
+cursor:default;	
+}
+.wrap-link-post_wrap-content-desk > a:hover{
+color: #D3DEFF;
+transition-duration: .4s;
+}
+.wrap-link-post_wrap-content-hashtags>a:hover{
+color: #D3DEFF;
+transition-duration: .4s;
+text-decoration: underline;
 }
 .wrap-link-post_delimiter{
 position: relative;
@@ -1171,4 +1192,100 @@ font-style: italic;
 /*fl теги*/
 .mobile-copuright{
 	display: none;
+}
+.map-links{
+	display: inline-flex;
+	width: 100%;
+	min-height: 200px;
+}
+.shell-document{
+	position: relative;
+	top: 20px;
+	left: 20px;
+	margin-right: 20px;
+	display: inline-flex;
+	width: 90px;
+	height: auto;
+}
+.recent-document-description{
+	position: relative;
+	width: 100%;
+	height: auto;
+	text-align: center;
+}
+.recent-document-description > a{
+	color: #BB7D5A;
+}
+.recent-document_name{
+	position: relative;
+	width: 100%;
+	top: -10px;
+	height: auto;
+	font-weight: 600;
+	font-size: 17px;
+	word-wrap: break-word;
+}
+.recent-document_datatime{
+	position: relative;
+	width: 100%;
+	top: -15px;
+	font-style: italic;
+	color: #D9C6C6;
+	font-size: 15px;
+	height: auto;
+}
+.recent-photo-wrap{
+	padding-top: 20px;
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+	width: 50%;
+	left: 10%;
+}
+.recent-photo-wrap > a:hover .recent-photo-album > img{
+	transition: 1s;
+	width: 140%;
+	height: 140%;
+}
+.recent-photo-wrap > a:hover .recent-photo-album > p{
+	transition: 1s;
+	top: 150px;
+	color: #060606;
+}
+.recent-photo-album{
+	position: relative;
+	width: 95%;
+	height: 185px;
+	background: linear-gradient(180deg, 
+		rgba(37, 37, 37, 0) 0%, 
+		rgba(0, 0, 0, 0.71) 100%),
+	#232323;
+ margin-left: 5px;
+ margin-right: 5px;
+ overflow: hidden;
+ opacity: right;
+}
+.recent-photo-album > img{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	top: -217px;
+	opacity: 0.8;
+}
+.recent-photo-album > p{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	top: 130px;
+	color: white;
+	z-index: 3;
+}
+.copy-block{
+	display: block;
+	position: relative;
+	top: 40px;
+	left: 50px;
+	color: #BB7D5A;
 }

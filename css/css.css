@@ -9,6 +9,11 @@
 	left: 0px;
 	display: block;
 }
+.form-output-zag-desktop:hover{
+	transition-duration: .3s;
+	color: white;
+	cursor: default;
+}
 .form-output-section-mobile{
 	display: none;
 }
@@ -132,6 +137,15 @@ grid-row-end: 2;
 width: 100%;
 height: 100%;
 display: block;
+}
+.text-image{
+	position: relative;
+	color: inherit;
+}
+.text-image:hover{
+transition-duration: .3s;
+color: white;
+cursor: default;
 }
 .main_text-image{
 	position: absolute;
@@ -309,6 +323,11 @@ font-size: 30px;
 line-height: 110.6%;
 color: #BB7D5A;
 }
+.--h1_post:hover{
+	color: white;
+	cursor: default;
+	transition-duration: 0.4s;
+}
 /*для текста самой записи*/
 .--text_post{
 	position: relative;
@@ -450,6 +469,11 @@ font-weight: bold;
 font-size: 15px;
 line-height: 110.6%;
 color: #BB7D5A;
+}
+.author-comment:hover{
+transition-duration: .3s;
+color: white;
+cursor: default;
 }
 .container-comment{
 position: relative;
@@ -698,6 +722,7 @@ color: white;
 	top: -15px;
 	font-style: italic;
 	color: #D9C6C6;
+	
 	font-size: 15px;
 	height: auto;
 }
@@ -740,6 +765,11 @@ color: white;
 	font-size: 16px;
 	line-height: 30px;
 	padding-bottom: 5px;
+}
+.recent-photo-zag:hover{
+color: white;
+transition-duration: 0.3s;
+cursor: default;
 }
 .recent-photo-wrap{
 	position: relative;
@@ -867,6 +897,13 @@ color: white;
 }
 .wrap-title{
 	display: none;
+}
+.copy-block{
+	display: block;
+	position: relative;
+	top: 40px;
+	left: 50px;
+	color: #BB7D5A;
 }
 /**************************************/
 /*автоклассы*/

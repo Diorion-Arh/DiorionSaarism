@@ -2,6 +2,9 @@
 /*
 Форма обратной связи
 */
+.map-links{
+	display: none;
+}
 .form_output{
 	display: none;
 }
