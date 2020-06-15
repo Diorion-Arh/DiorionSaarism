@@ -71,6 +71,10 @@ display: none;
   break-inside: avoid;
   padding: 5px;
 }
+.masonry-layout__panel-text-descript:hover{
+transition-duration: .3s;
+color: black;
+}
 .masonry-layout__panel-content{
 	position: relative;
   padding: 10px;

@@ -1,4 +1,4 @@
-/*
+/*recent-document-description
 Форма обратной связи
 */
 .form-output{
@@ -157,7 +157,7 @@ font-family: 'Roboto Condensed', sans-serif;
 letter-spacing: 20px;
 text-align: center;
 top: 10%;
-color: #BCA770;
+color: white;
 }
 /*секция с основным контентом*/
 .wrap{
@@ -907,3 +907,4 @@ color: white;
 }
 /**************************************/
 /*автоклассы*/
+/*эффекты рамок*/
