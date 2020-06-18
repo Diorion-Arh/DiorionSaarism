@@ -34,6 +34,8 @@ display: none;
 	font-weight: 100;
 	text-align: center;
 	font-size: 14px;
+	word-break: break-all;
+	margin-top: 5px;
 }
 .masonry-layout__panel-text-descript{
 	position: relative;
@@ -50,17 +52,24 @@ display: none;
 	position: relative;
 	left: 0px;
 	padding: 0px;
-	width: 100px;
-	height: 60px;
+	width: 90%;
+	height: 100%;
+	overflow: hidden;
+	cursor: pointer;
 }
 .masonry-layout__panel-content > img{
 	position: relative;
 	width: 100%;
-	height: 130px;
+	height: 100%;
 	object-fit: cover;
 	left: -20px;
 	padding:0px;
-	margin:  0px;
+	margin:0px;
+}
+.masonry-layout__panel-content:hover:after{ 
+  content:" ";
+  position: absolute;
+  box-shadow: 0 0 0 10000px rgba(0,0,0, 0.4);
 }
 .masonry-layout {
   column-count: 6;
@@ -73,7 +82,8 @@ display: none;
 }
 .masonry-layout__panel-text-descript:hover{
 transition-duration: .3s;
-color: black;
+z-index: 2;
+cursor: default;
 }
 .masonry-layout__panel-content{
 	position: relative;
@@ -82,7 +92,6 @@ color: black;
   height: auto;
   border-bottom: 1px solid #B52828;
   margin-bottom: 0px;
-
 }
 .document-menu{
 position: relative;
@@ -523,4 +532,54 @@ margin-top: 0px;
 height: 1px;	
 background: #B52828;
 border: none;
+width: 100%;
+}
+.open_document_and_download > a{
+	font-size: 14px;
+	color: #430B0B;
+	top: 5px;
+}
+.masonry-layout__panel-content:hover .open_document_and_download{
+transition-duration: .6s;
+height: 30px;
+}
+.masonry-layout__panel-content:hover .open_document_and_download > a{
+	transition-duration: .6s;
+	color: white;
+}
+.open_document_and_download > a:hover{
+	z-index: 2;
+	cursor: default;
+	color: white;
+	text-decoration: underline;
+	cursor: pointer;
+}
+.open_document_and_download{
+	position: relative;
+	text-align: center;
+	width: auto;
+	height: auto;
+	word-break: break-all; /*переносит слово на новую строку
+	если блок слишком маленький*/
+	text-indent: 0px;
+	color: #FFFFFF;
+	font-weight: 100;
+	
+}
+.open_document_and_download:hover{
+	z-index: 3;
+}
+.--h1_post:hover{
+color: white;
+cursor: default;
+transition-duration: .3s;
+}
+.open_document_icon{
+display: none;
+}
+.download_icon{
+display: none;
+}
+.author_document{
+display: none;
 }
