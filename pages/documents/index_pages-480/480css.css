@@ -94,7 +94,7 @@ position: fixed;
 width: 290px;
 height: 800px;
 top: 0px;
-z-index: 2;
+z-index: 3;
 background-size: cover;
 background: url(../images/0jvg0kFj66M.jpg) no-repeat center top;
 }
@@ -270,6 +270,9 @@ text-decoration: underline;
 	width: auto;                                                
 	color: #6C1818;
 }
+.post-head-span-text-block_datatime:hover{
+text-decoration: underline;
+}
 /*меню управления постом МВ*/
 .post-head-span-text-block_over{
 	position: relative;
@@ -308,9 +311,7 @@ display: none;
 }
 /*деинтеграция глобального псевдоактиватора для всех заголовков постов*/
 .--h1_post:hover{
-color: unset;
-cursor: unset;
-transition-duration: unset;
+	color: black;
 }
 /*псевдоактиватор для текста заголовка поста */
 .--h1_post{
@@ -422,11 +423,10 @@ height: unset;
 	margin-left: 10px;
 	object-fit: cover;
 	left: 0px;
+	z-index: 2;
 }
 .masonry-layout__panel-content:hover:after{ 
-  content: unset;
-  position: unset;
-  box-shadow: unset;
+  box-shadow: 0 0 0 10000px rgba(0,0,0, 0.1);
 }
 /*грид для даты*/
 .masonry-layout__date{
@@ -486,7 +486,13 @@ height: unset;
 	background-image: url('../icons/eye.png');
 	background-repeat: no-repeat;
 	background-position: center;
-	z-index: 3;
+	z-index: 2;
+}
+.open_document_icon:hover:after{
+	position: relative;
+}
+.open_document_icon:hover{
+	opacity: 0.7;
 }
 /*гриды для "скачивания"*/
 .download_icon{
@@ -501,7 +507,10 @@ height: unset;
 	background-image: url('../icons/down.png');
 	background-repeat: no-repeat;
 	background-position: center;
-	z-index: 3;
+	z-index: 2;	
+}
+.download_icon:hover{
+	opacity: 0.7;
 }
 .open_document_and_download > a{
 	display: none;
@@ -513,9 +522,7 @@ height: unset;
 	top: unset;
 }
 .masonry-layout__panel-text-descript:hover{
-transition-duration: unset;
-z-index: unset;
-cursor: unset;
+
 }
 .masonry-layout__panel-text-descript{
 	grid-column-start: 1;
@@ -834,6 +841,7 @@ height: 150px;
 padding-left:0px;
 	float: left;
 	height: auto;
+	z-index: 2;
 }
 .social-icons > a > img{
 	position: relative;
