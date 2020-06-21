@@ -1,4 +1,4 @@
-@media (max-width: 480px){
+@media (max-device-width: 480px){
 /*
 Форма обратной связи
 */
@@ -15,7 +15,7 @@
 }
 .form-output-block-mobile{
 	position: relative;
-width: 95%;
+width: 100%;
 height: auto;
 background-color: #6C1818;
 padding-left: 0px;
@@ -354,7 +354,7 @@ background: url(../icons/main-mobile-menu12.png) no-repeat center top;
 }
 .head-site-mobile{
 	position: fixed;
-	width: 100%;
+	width:480px;
 	height: 55px;
 	background-color: #6C1818;
 	z-index: 2;
@@ -371,7 +371,7 @@ background: url(../icons/main-mobile-menu12.png) no-repeat center top;
   align-items: center;  /* центрируем содержимое кнопки */
   position: fixed;
   top: 15px;
-  left: 91%;
+  left: 85%;
   width: 26px;
   height: 26px;
   cursor: pointer;
