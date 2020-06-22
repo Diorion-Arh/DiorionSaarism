@@ -11,9 +11,11 @@
 	<link rel="shortcut icon" href="icons/favicon.ico" type="image/x-icon">
 	<script type="text/javascript" src="JS/type.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.2.3/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 </head>
-<body>
-	<section class="wrap">
+<body id="body">
+
+	<section class="wrap"><div class="overlay"></div>
 				<div class="main_image">			
 				<a href="#"><p class="main_text-image"></p></a>
 			<img src="images/globe-1849404_1920.png">
@@ -295,7 +297,8 @@
 			<div class="head-site-mobile">
 				<a href="#"><div class="head-site-mobile-logo">Saarism</div></a>
 		</div>	
-			<div class="post">
+			<div id="post" class="post">
+				<div class="overlay"></div>
 				    <p class="post-context">
 				    	<!--здесь добавляется контекст к посту-->
 				    </p>	
@@ -304,15 +307,20 @@
 						<img src="images/milky-way-916523_1920.jpg"/>
 					</div>	
 							<div class="post-head-span-text-block">
-							<span class="post-head-span-text-block_username">Username</span>
+							<span id ="username" class="post-head-span-text-block_username">Username</span>
 							<span class="post-head-span-text-block_datatime">Posted yesterday</span>
-							<a href="#"><div class="post-head-span-text-block_over"></div></a>
+							<button class="post-head-span-text-block_over" id="menu_react"></button>
+							<div class="frame_menu" id="er">
+								<button id="copy_link">скопировать текст записи</button>
+								<button>открыть "управление записями"</button>
+								<button>закрыть</button>
+							</div>
 						</div>
 				</div>	
 				<div class="--ident author-post">
 				<div class="author_column-img"><img src="others/avatars/avatar_author.png"></div>
 					   <h1 class="--h1_post"><a name="introduction"></a>Вступительное слово</h1>
-					   <div class="--text_post">
+					   <div id="text_post" class="--text_post">
 <p>Наш ресурс посвящен многочисленным трудам, которые хранят в себе нескончаемое количество Знаний о Природе, Жизни, Развитии и Духовных качествах и путях.</p>
 
 <p>Нам нужно создать в этом мире не просто маленькое объединение существ, разделяющих те или иные стороны Сааризма, а большое общество, призванное в первую очередь оставаться всегда самими собой, независимо от факторов среды и использовать весь духовный потенциал.</p>
@@ -348,7 +356,7 @@
 				   		<img src="images/milky-way-916523_1920.jpg"/>
 				    	</div>	
 						      <div class="post-head-span-text-block">
-						     	<span class="post-head-span-text-block_username">Username</span>
+						     	<span id="Username2"class="post-head-span-text-block_username">Username</span>
 						     	<span class="post-head-span-text-block_datatime">Posted yesterday</span>
 					  	   	<a href="#"><div class="post-head-span-text-block_over"></div></a>
 					      	</div>
@@ -524,5 +532,7 @@ VK.Widgets.Comments("vk_comments", {limit: 500, attach: "*"});
 		 </div>
 	</footer>
 	<script type="text/javascript" src="JS/u-active_comment.js"></script>
+	<script type="text/javascript" src="JS/frame.js"></script>
+	<script type="text/javascript" src="JS/copylink.js"></script>
 </body>
 </html>

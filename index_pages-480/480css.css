@@ -513,12 +513,31 @@ border-radius: 50px;
 }
 .post-head-span-text-block_over{
 	position: relative;
-	padding-left: 10px;
+	padding-left: 14px;
 	height: 10px;
-	padding-top: 10px;
+	left: 15px;
+	padding-top: 12px;
 	width: 30px;                                                
 	color: #6C1818;
 	background: url(../icons/more.png) no-repeat center;
+	border: 1px solid white;
+}
+.frame_menu{
+	position: absolute;
+	width: 100px;
+	height: auto;
+	z-index: 1;
+	top: 20px;
+	left: 73%;
+	background-color: white;
+	display: none;
+}
+.overlay{
+	background-color: rgba(0,0,0,0.3); 
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    display: none;
 }
 /****************************/
 /*локальные псевдоактиваторы*/

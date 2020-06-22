@@ -866,8 +866,7 @@ padding-left:0px;
 	border-radius: 20px;
 }
 .copy-block{
-	position: relative;
-top: 0px;
+	display: none;
 }
 /*************************/
 }

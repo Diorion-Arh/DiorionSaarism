@@ -544,6 +544,9 @@ font-size: 27px;
 line-height: 110.6%;
 color: #6C1818;
 }
+.--h1_post:hover{
+color: black;
+}
 /*для текста самой записи*/
 .--text_post{
 	position: relative;
@@ -585,6 +588,9 @@ height: auto;
 	color: black;
 	left: 0px;
 	margin-left: 0px;
+}
+.wrap-link-post_wrap-content-desk:hover{
+	color: black;
 }
 .wrap-link-post_wrap-content-name{
 	display: block;
@@ -919,6 +925,9 @@ height: 150px;
 padding-left:0px;
 	float: left;
 	height: auto;
+}
+.copy-block{
+	display: none;
 }
 .social-icons > a > img{
 	position: relative;
