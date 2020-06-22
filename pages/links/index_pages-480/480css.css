@@ -408,6 +408,7 @@ background: url(../icons/main-mobile-menu12.png) no-repeat center top;
 	font-size:25px;
 	color: #BCA770;
 	font-weight: 100;
+	width: 25%;
 }
 .wrap-title{
 	position: relative;

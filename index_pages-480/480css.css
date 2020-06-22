@@ -1,4 +1,4 @@
-@media (max-device-width: 480px){
+@media (max-width: 480px){
 /*
 Форма обратной связи
 */
@@ -371,7 +371,7 @@ background: url(../icons/main-mobile-menu12.png) no-repeat center top;
   align-items: center;  /* центрируем содержимое кнопки */
   position: fixed;
   top: 15px;
-  left: 85%;
+  left: 90%;
   width: 26px;
   height: 26px;
   cursor: pointer;
@@ -405,6 +405,7 @@ background: url(../icons/main-mobile-menu12.png) no-repeat center top;
 	font-size:25px;
 	color: #BCA770;
 	font-weight: 100;
+	width: 25%;
 }
 .wrap-title{
 	top: 30px;
@@ -536,6 +537,10 @@ font-size: 27px;
 line-height: 110.6%;
 color: #6C1818;
 }
+.--h1_post:hover{
+	color: black;
+
+}
 /*для текста самой записи*/
 .--text_post{
 	position: relative;
@@ -568,7 +573,7 @@ display: none;
 position: relative;
 width: 195px;
 height: auto;
-left: 50%;
+left: 55%;
 top: 0px;
 font-style: italic;
 font-weight: normal;
@@ -599,9 +604,22 @@ color: #6C1818;
 .post-comment-icon{
 	position: relative;
 	width: 15px;
-	height: 15px;
+	height: 20px;
 	background:url(../icons/mode_comment.png) no-repeat center;
 	left: 70%;
+	border: white;
+	display: block;
+}
+.post-comment-icon_active{
+	position: relative;
+	background:url(../icons/mode_comment-active.png) no-repeat center;
+	display: block;
+	left: 70%;
+	bottom: 0px;
+	width: 15px;
+	height: 20px;
+	border: white;
+	display: none;
 }
 .post-quantity-comment{
 	position: relative;
@@ -621,6 +639,7 @@ color: #6C1818;
 	background: url(../icons/like.png) no-repeat center;
 		left: 70%;
 		padding-left: 15px;
+		margin-bottom: 10px;
 }
 .post-quantity-like{
 	position: relative;
@@ -648,6 +667,7 @@ color: #6C1818;
 	grid-template-rows: 15px auto auto;
 	font-size: 11px;
 	font-family: 'Inter';
+	display: none;
 }
 .post-avatar-comment{
 	position: relative;
@@ -692,11 +712,11 @@ color: #6C1818;
 	width: 100%;
 	height: auto;
 	position: relative;
-	display: grid;
 	grid-template-columns: 30% 32% 35%;
 	grid-template-rows: auto auto auto;
 	grid-row-gap: 5px;
 	background-color: #ECECEC;
+	display: none;
 }
 .post-comment-submit > span{
 	position: relative;
@@ -773,6 +793,9 @@ color: #BB7D5A;
 font-family: 'Inter';
 margin: 0;
 padding: 0;
+}
+.text-image:hover{
+	color: red;
 }
 /*оболочка для видео*/
 .post-video{
@@ -854,6 +877,9 @@ padding-left:0px;
 	position: relative;
 	margin-right: 10px;
 }
+.copy-block{
+	display: none;
+}
 ::-webkit-scrollbar {
     width: 12px;
  background-color: none;
@@ -879,4 +905,5 @@ padding-left:0px;
 	}
 #menu_body{
 	display: none;
+}
 }

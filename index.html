@@ -2,7 +2,6 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">	
-	<meta name="viewport" content="initial-scale=1.0">
 	<title>main</title>
 	<link rel="stylesheet" href="css/css.css">
 	<link href="https://fonts.googleapis.com/css2?family=Slabo+27px&display=swap" rel="stylesheet">
@@ -11,6 +10,7 @@
 	<link rel="stylesheet" href="index_pages-480/480css.css">
 	<link rel="shortcut icon" href="icons/favicon.ico" type="image/x-icon">
 	<script type="text/javascript" src="JS/type.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.2.3/jquery.min.js"></script>
 </head>
 <body>
 	<section class="wrap">
@@ -293,7 +293,7 @@
 		<div class="main_wrap-text">
 			<!------------------------------->		
 			<div class="head-site-mobile">
-				<a href="#"><div class="head-site-mobile-logo"></div></a>
+				<a href="#"><div class="head-site-mobile-logo">Saarism</div></a>
 		</div>	
 			<div class="post">
 				    <p class="post-context">
@@ -325,12 +325,13 @@
 				</div>
 				<hr class="post-delimiter"/>
 				<div class="post-social-menu">
-					<div class="post-comment-icon"></div>
+					<button class="post-comment-icon" id="showContent"></button>
+					<button class="post-comment-icon_active" id="hideContent"></button>
 					<div class="post-quantity-comment">1</div>
 					<div class="post-like-icon"></div>
 					<div class="post-quantity-like">35<span>likes</span></div>
 				</div>
-			<div class="post-comment-menu">
+			<div class="post-comment-menu" id="content">
 				<div class="post-avatar-comment"></div>
 				<div class="post-avtor-comment">Savoil2000</div>
 				<div class="post-comment-datatime">17 April, 2020</div>
@@ -370,12 +371,13 @@
 				   </div>
 				   <hr class="post-delimiter"/>
 			   	<div class="post-social-menu">
-				         	<div class="post-comment-icon"></div>
+				         	<button class="post-comment-icon" id="showContent2"></button>
+					<button class="post-comment-icon_active" id="hideContent2"></button>
 				         	<div class="post-quantity-comment">13</div>
 				         	<div class="post-like-icon"></div>
 					         <div class="post-quantity-like">25<span>likes</span></div>
 				  </div>
-			 <div class="post-comment-submit">
+			 <div class="post-comment-submit" id="content2">
 				<span>Чтобы получить доступ к этой информации или оставить комментарий, заполните поля</span>
 				<input class="post-comment-submit-email" type="email" name="sy" placeholder="e-mail">
 				<input class="post-comment-submit-number" type="phone" name="sy" placeholder="+7">
@@ -383,7 +385,7 @@
 				<textarea class="post-comment-submit-text" name="sy" placeholder="text-comment"></textarea>
 	  </div>
 	 </div>
-			<!------------------------------->	
+			<!------------------------------->
 				<div class="post">
 			    	<p class="post-context"></p>		
 			 				<div class="post-head">
@@ -411,11 +413,19 @@
 					        <p class="datatime_block">15:45 19 апреля, 2020 г</p>
 					        <hr class="post-delimiter"/>
 					       				<div class="post-social-menu">
-					                <div class="post-comment-icon"></div>
+					<button class="post-comment-icon" id="showContent3"></button>
+					<button class="post-comment-icon_active" id="hideContent3"></button>
 					                <div class="post-quantity-comment">1</div>
 				                	<div class="post-like-icon"></div>
 				                	<div class="post-quantity-like">35<span>likes</span></div>
 			             </div>
+				 <div class="post-comment-submit" id="content3">
+				<span>Чтобы получить доступ к этой информации или оставить комментарий, заполните поля</span>
+				<input class="post-comment-submit-email" type="email" name="sy" placeholder="e-mail">
+				<input class="post-comment-submit-number" type="phone" name="sy" placeholder="+7">
+				<input class="post-comment-submit-nikname" type="input" name="sy" placeholder="your nikname">
+				<textarea class="post-comment-submit-text" name="sy" placeholder="text-comment"></textarea>
+	  </div>		             
 		     </div>
 	</div>
 			<!------------------------------->
@@ -513,5 +523,6 @@ VK.Widgets.Comments("vk_comments", {limit: 500, attach: "*"});
 		 	Copyright, 2020@ Diorion Arh. Все права защищены.
 		 </div>
 	</footer>
+	<script type="text/javascript" src="JS/u-active_comment.js"></script>
 </body>
 </html>
