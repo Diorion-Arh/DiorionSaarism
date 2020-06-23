@@ -30,16 +30,19 @@ display: none;
 	display: none;
 }
 #inline {
+	grid-column-start: 2;
+	grid-column-end: 3;
+	grid-row-start: 1;
+	grid-row-end: 1;
    position: relative;
-   width:79.5%;
    height: auto;
    margin: 0 auto;
+   width: 78.4%;
    background:#FFF;
    padding:27px;
    margin-left: 0%;
    padding-right: 17.6%;
    background-color: #6C1818;
-   z-index: 2;
    padding-bottom: 60px;
 }
 .txt {
@@ -166,7 +169,7 @@ color: white;
 	position: relative;
 	display: grid;
 	grid-template-columns: 100px 54.8% 24%;
-	grid-template-rows: auto 60px auto auto;
+	grid-template-rows: auto auto auto auto;
 }
 /*свойства для главного меню*/
 .main_menu{
@@ -247,13 +250,13 @@ color: #BB7D5A;
 }
 /*правое боковое меню*/
 .right_dop_menu{
+	position: relative;
 	grid-column-start: 3; 
 	grid-column-end: 4; 
 	grid-row-start: 3; 
 	grid-row-end: 4; 
 	background-color: #2C0202;
 	color:#BB7D5A;
-	z-index: 2;
 }
 /*колонка для аватара автора*/
 .author_column{
@@ -272,6 +275,7 @@ color: #BB7D5A;
 	grid-row-end: 4;
 	background-color: #430B0B;
 	color:#BB7D5A;
+	padding-right: 15px;
 }
 /*спецификатор для всех постов*/
 .post{
@@ -290,7 +294,6 @@ color: #BB7D5A;
 	height: auto;
 	border: 2px solid #B52828;
 	left: 15px;
-	padding-left: 10px;
 }
 /*аватар автора поста*/
 .author_column-img{
@@ -314,14 +317,21 @@ color: #BB7D5A;
 /*локальные псевдоактиваторы*/
 /*для текста заголовка*/
 .--h1_post{
+	position: relative;
 width: 100%;
 height: 50px;
-left: 140px;
+left: 10px;
 font-style: normal;
 font-weight: bold;
 font-size: 30px;
 line-height: 110.6%;
 color: #BB7D5A;
+}
+@media (max-width: 600px){
+.--h1_post{
+	width: 90%;
+	height: auto;
+}	
 }
 .--h1_post:hover{
 	color: white;
@@ -331,7 +341,7 @@ color: #BB7D5A;
 /*для текста самой записи*/
 .--text_post{
 	position: relative;
-width: 95%;
+width: 93%;
 height: auto;
 left: 15px;
 padding-bottom: 10px;
@@ -376,7 +386,7 @@ font-style: italic;
 .datatime_block{
 position: relative;
 width: 25%;
-height: 20px;
+height: auto;
 left: 74%;
 top: -30px;
 font-style: italic;
@@ -384,6 +394,13 @@ font-weight: normal;
 font-size: 1em;
 line-height: 110.6%;
 color: #BB7D5A;
+}
+@media (max-width: 800px){
+.datatime_block{
+	left: 0%;
+	top: 0px;
+	width: 100%;
+}
 }
 /*оболочка для изображения в посте*/
 .post-image{
@@ -449,6 +466,7 @@ color: #BB7D5A;
 }
 .comment-block{
 position: relative;
+width: 100%;
 }
 .comment{
 position: relative;
@@ -458,6 +476,11 @@ width: 90%;
 left: 50px;
 height: 300px;
 top: 10px;
+}
+@media (max-width: 600px){
+.comment{
+	left: 30px;
+}
 }
 .author-comment{
 position: relative;
@@ -494,6 +517,12 @@ top: 0px;
 	width: 88%;
 	height: auto;
 	float: right;
+}
+@media(max-width: 600px){
+.text-comment{
+height: auto;
+width: 50%;
+	}
 }
 .delimiter-comment{
 top: auto;
@@ -596,6 +625,25 @@ grid-row-end: 5;
     width: 100%;
     color: #BB7D5A;
     }
+ @media (max-width: 600px){
+#menu_body > ul > li{
+	height: auto;
+	width: 130%;
+ }
+ #menu_body > ul > li > a{
+	height: auto;
+	width: 100%;
+ }
+ .active_li > a{
+ 	position: relative;
+	height: 100%;
+	width: 100%;
+ }
+ .active_li{
+ 	position: relative;
+ 	height: auto;
+ }
+}
 #part > li{
 	display: none;
 }
@@ -776,7 +824,12 @@ cursor: default;
 	display: flex;
 	justify-content: space-between;
 	width: 100%;
-
+}
+@media (max-width: 600px){
+	.recent-photo-wrap{
+		width: 100%;
+		display: inline;
+	}
 }
 .recent-photo-wrap > a:hover .recent-photo-album > img{
 	transition: 1s;
@@ -842,6 +895,11 @@ color: white;
 	height: auto;
 	justify-content: space-between;
 }
+@media (max-width: 600px){
+.recent-mediafiles-flex-wrap{
+	display: inline;
+}
+}
 .column{
 	position: relative;
 	width: 100%;
@@ -904,6 +962,20 @@ color: white;
 	top: 40px;
 	left: 50px;
 	color: #BB7D5A;
+}
+@media (max-width: 600px){
+.copy-block{
+	top: 0px;
+	width: 70%;
+	height: auto;
+	color: #BB7D5A;
+	left: 50px;
+	padding-top: 90px;
+}
+.social-icons{
+	position: relative;
+	padding-left: 60px;
+}
 }
 /**************************************/
 /*автоклассы*/
