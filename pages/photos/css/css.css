@@ -1,0 +1,480 @@
+.close_album > img{
+	position: relative;
+	width: 20px;
+	height: auto;
+	left: -5px;
+	top: 0px;
+}
+.close_album{
+	position: absolute;
+	top: 5px;
+	right: 5px;
+	width: 20px;
+	height: 20px;
+	background: none;
+	border: none;
+	cursor: pointer;
+}
+.photo-scroll-wrap-image{
+	position: relative;
+	overflow: scroll;
+	width: 80vw;
+	min-height: 100px;
+	height: 70%;
+	padding-bottom: 20px;
+	margin-left: 25px;
+	display: inline-flex;
+	flex-wrap: wrap;
+	overflow-x:hidden;
+}
+.open_album{
+	position: fixed;
+	left:7%;
+	top: 5%;
+    width: 80vw;
+    min-height: 300px;
+    height: 70%;
+	background: #430B0B;
+	z-index: 3;
+	display: none;
+	padding-left: 5%;
+	border: 2px solid #B52828;
+}
+.photo > img{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	left: -20px;
+}
+.photo{
+	position: relative;
+	width: 200px;
+	height: 200px;
+	background-color: green;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	object-fit: cover;
+}
+.photo-wrap-image{
+	position: relative;
+	width: 96%;
+	height: auto;
+	padding-bottom: 20px;
+	margin-left: 25px;
+	display: inline-flex;
+	flex-wrap: wrap;
+}
+.album-static > img{
+position: relative;
+width: 100%;
+height: 100%;
+left: -20px;
+}
+.album-static:hover{
+position: relative;
+transition-duration: 1s;
+cursor: pointer;
+}
+.shadow-quantity-album-nomatrix{
+	position: relative;
+	color: white;
+	font-weight: 600;
+	height: 100%;
+	width: 100%;
+	transform: matrix(1, 0, 0, -1, 0, 0);
+	line-height: 50px;
+	z-index: 1;
+}
+.shadow-quantity-album{
+	position: absolute;
+	width: 100%;
+	bottom: 0px;
+	color: white;
+	font-weight: 600;
+	height: 45px;
+	background: linear-gradient(180deg, #000000 0%, rgba(4, 4, 4, 0.369792) 66.67%, rgba(31, 3, 3, 2.98023e-08) 100%);
+transform: matrix(1, 0, 0, -1, 0, 0);
+	text-align: center;
+	text-indent: 0px;
+	z-index: 1;
+}
+.shadow-name-album{
+	position: absolute;
+	color: white;
+	font-weight: 600;
+	height: auto;
+	background: linear-gradient(180deg, #000000 0%, rgba(4, 4, 4, 0.369792) 66.67%, rgba(31, 3, 3, 2.98023e-08) 100%);
+	text-align: center;
+	text-indent: 0px;
+	z-index: 1;
+	line-height: 30px;
+	width: 100%;
+}
+.album-static{
+	position: relative;
+	width: 200px;
+	height: 200px;
+	background-color: green;
+	margin-left: 10px;
+	object-fit: cover;
+	margin-bottom: 10px;
+}
+.photo-wrap-album{
+position: relative;
+width: 96%;
+height: auto;
+margin-right: 25px;
+display: inline-flex;
+flex-wrap: wrap;
+margin-left: 20px;
+}
+.photo-wrap{
+	position: relative;
+	width: 99%;
+	height: auto;
+	padding-bottom: 20px;
+}
+.mobile-copuright{
+display: none;
+}
+#menu__toggle{
+	display: none;
+}/*
+Форма обратной связи
+*/
+/***********************/
+/*глобальные псевдоактиваторы*/
+/*для текста*/
+.--ident{
+	text-indent: 20px;
+}
+/***********************/
+/*глобальные селекторы*/
+.copy-block{
+	display: block;
+	position: relative;
+	top: 40px;
+	left: 50px;
+	color: #BB7D5A;
+}
+body{
+	background-color: black;
+	font-family: 'Calibri';
+	color: white;
+}
+a{
+	text-decoration: none;
+	list-style-type: none;
+	color: white;
+}
+/*контейнер для главного изображения*/
+.main{
+position: relative;
+background-color: none;
+grid-column-start:1;
+grid-column-end: 4;
+grid-row-start: 1;
+grid-row-end: 2;
+}
+/*позиционирование главного изображения*/
+.main_image{
+	position: relative;
+	display: block;
+	grid-column-start:1;
+ grid-column-end: 3;
+ grid-row-start: 1;
+ grid-row-end: 2;
+}
+/*размеры главного изображения*/
+.main_image > img{
+	position: relative;
+width: 100%;
+height: 100%;
+display: block;
+}
+.main_text-image{
+	position: absolute;
+	width: 100%;
+	height: auto;
+	font-size: 3.3em;
+	z-index: 2;
+font-family: 'Roboto Condensed', sans-serif;
+letter-spacing: 20px;
+text-align: center;
+top: 10%;
+color: #BCA770;
+}
+/*секция с основным контентом*/
+.wrap{
+	position: relative;
+	left: 125px;
+	position: relative;
+	display: grid;
+	grid-template-columns: 100px 84.8%;
+	grid-template-rows: auto 60px auto auto;
+}
+/*свойства для главного меню*/
+.main_menu{
+	grid-column-start: 1; 
+	grid-column-end: 3; 
+	grid-row-start: 2; 
+	grid-row-end: 3; 
+	background-color: black;
+	display: flex;
+	justify-content: center;
+}
+/*свойства самого списка*/
+.main_menu > ul{
+position: relative;
+list-style-type: none;
+display: flex;
+justify-content: space-between;
+}
+/*свойства для пунктов главного меню*/
+.main_menu > ul > a > li{
+	height: auto;
+}
+/*свойство для подчеркнутой линии активного пункта*/
+.main_menu > ul > a > li{
+    line-height: 1;
+    position:relative;
+
+}
+.main_menu > ul > a > li:after {
+	   top: 20px;
+    background-color: white;
+    display: block;
+    content: "";
+    height: 2px;
+    width: 0%;
+    left:50%;
+    position:absolute;
+    -webkit-transition: width .3s ease-in-out;
+    -moz--transition: width .3s ease-in-out;
+    transition: width .3s ease-in-out;
+    -webkit-transform:translateX(-50%);
+    -moz-transform:translateX(-50%);
+    transform:translateX(-50%);
+}
+.main_menu > ul > a >li:hover:after,
+.main_menu > ul > a >li:focus:after {
+    width: 100%;
+}
+.active{
+	color: #BB7D5A;
+}
+.active:hover{
+color: white;
+}
+.main_menu_mobile{
+	display: none;
+}
+.post-head{
+	display: none;
+}
+.post-delimiter{
+	display: none;
+}
+/*свойства для ссылок главного меню*/
+.main_menu > ul > a{
+	margin-left: 10px;
+ margin-right: 10px;
+}
+/*эффект при наведении на пункт главного меню*/
+.main_menu > ul > a:hover{
+height: 30px;
+color: #BB7D5A;
+}
+/*колонка для аватара автора*/
+.author_column{
+	grid-column-start: 1;
+	grid-column-end: 2;
+	grid-row-start: 3;
+	grid-row-end: 4;
+	background-color: #6C1818;
+}
+/*оболочка для секции с записями*/
+.main_wrap-text{
+	position: relative;
+	grid-column-start: 2;
+	grid-column-end: 3;
+	grid-row-start: 3;
+	grid-row-end: 4;
+	background-color: #430B0B;
+	color:#BB7D5A;
+}
+/*спецификатор для всех постов*/
+.post{
+	position: relative;
+	width: 100%;
+}
+/*дополнительный контекст для поста*/
+.post-context{
+	position: relative;
+	left: 20px;
+}
+/*контент поста*/
+.author-post{
+	position: relative;
+	width: 95%;
+	height: auto;
+	border: 2px solid #B52828;
+	left: 15px;
+	padding-left: 10px;
+}
+/*аватар автора поста*/
+.author_column-img{
+	position: absolute;
+	width: 100px;
+	height: 150px;
+	left: -117px;	
+	border-top: 2px solid #B52828;
+	border-bottom: 2px solid #B52828;
+}
+/*свойства для картинки аватара*/
+.author_column-img > img{
+	position: absolute;
+	left: 0px;
+ width: 100%;
+	height: 100%;
+	object-fit: cover; /*свойство для вписания 
+	изображения в окно контейнера*/
+}
+/****************************/
+/*локальные псевдоактиваторы*/
+/*для текста заголовка*/
+.--h1_post{
+width: 100%;
+height: 50px;
+left: 140px;
+font-style: normal;
+font-weight: bold;
+font-size: 30px;
+line-height: 110.6%;
+color: #BB7D5A;
+}
+/******************************/
+/*Автор:*/
+.author_profile_link{
+	position: relative;
+width: 20%;
+height: 18px;
+left: -3px;
+font-style: normal;
+font-weight: normal;
+font-size: 1em;
+line-height: 110.6%;
+color: #EACE87;
+}
+/*ссылка на автора и него ник*/
+.author_Nik-Name{
+	position: relative;
+color: #BB7D5A;
+left: 5px;
+font-style: italic;
+}
+/*анимация волны при наведении*/
+.author_Nik-Name:hover{
+	 background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='squiggle-link' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 20 4'%3E%3Cstyle type='text/css'%3E.squiggle{animation:shift .3s linear infinite;}@keyframes shift {from {transform:translateX(0);}to {transform:translateX(-20px);}}%3C/style%3E%3Cpath fill='none' stroke='%23453886' stroke-width='2' class='squiggle' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E");
+  background-position: bottom;
+  background-repeat: repeat-x;
+  background-size: 20%;
+  border-bottom: 0;
+  padding-bottom: .3em;
+  text-decoration: none;
+  color: #D59774;
+}
+/*блок с временем и датой выпуска поста*/
+.datatime_block{
+position: relative;
+width: 25%;
+height: 20px;
+left: 74%;
+top: -30px;
+font-style: italic;
+font-weight: normal;
+font-size: 1em;
+line-height: 110.6%;
+color: #BB7D5A;
+}
+/*форма обратной связи*/
+.form_output{
+	margin-top: 20px;
+	width: 100%;
+	height: 100%;
+}
+footer{
+position: relative;
+background-color:#360909;
+grid-column-start:1;
+grid-column-end: 3;
+grid-row-start: 4;
+grid-row-end: 5;
+}
+.social-icons{
+	position: relative;
+	padding-top: 25px;
+	padding-left: 150px;
+	float: left;
+	height: auto;
+	padding-bottom: 25px;
+}
+.social-icons > a > img{
+	position: relative;
+	margin-right: 10px;
+}
+::-webkit-scrollbar {
+    width: 12px;
+ background-color: none;
+}
+::-webkit-scrollbar-track {
+	background-color: #6C1818;
+}
+::-webkit-scrollbar-thumb {
+	border-radius: 20px;
+ background-color: #2A0707;
+}
+::-webkit-scrollbar-button{
+	background-color: #B52828;
+}
+::-webkit-resizer{
+	background-color: #B52828;
+	border-radius: 20px;
+}
+/**зарезервированные 
+псевдоактиваторы для ссылок*/
+/*
+--color-link-section\activate (--c-l-s) - стилизует ссылку
+при активации любой ссылки вида section
+*/
+.--c-l-s:hover .shell > p{
+		transition: .3s;
+	color: white;
+}
+.--c-l-s:hover .shell{
+	transition: .3s;
+	background-color: #060606;
+}
+/*
+/*--color-link-document-wrap (--c-l-d-w) -стилизует иконку документа
+и ссылку на сам файл при наведении*/ 
+.--c-l-d-w > a:hover{
+	transition: .3s;
+	color: white;
+}
+.--c-l-d-w > a > img:hover{
+		transition: .3s;
+	background-color: rgb(0, 0, 0, 0.4);
+}
+/*--color-wrap-photo-album (--c-w-p-a) -стилизует фотоальбом 
+на главной странице*/
+.main_menu_mobile{
+	display: none;
+}
+.head-site-mobile{
+	display: none;
+}
+.wrap-title{
+	display: none;
+}

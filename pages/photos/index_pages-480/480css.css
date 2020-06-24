@@ -1,0 +1,519 @@
+@media (max-width: 480px){
+.close_album:after{
+content: 'закрыть';
+color: white;
+}
+.close_album > img{
+display: none;
+}
+.close_album{
+	position: absolute;
+left: 0px;
+top: 15px;
+left: 5px;
+z-index: 3;
+}
+.photo{
+width: 150px;
+height: 150px;
+	}
+.open_album > h1:hover{
+	color: white;
+	}
+.open_album > h1{
+	color: unset;
+font-weight: 100;
+text-align: center;
+width: auto;
+top: 30px;
+min-width: 80%;
+	}
+.open_album{
+	background-color: black;
+	opacity: 0.95;
+	border: none;
+	width: 100vw;
+	height: 100%;
+	left: 0px;
+	z-index: 2;
+}
+/*секция с основным контентом*/
+.wrap{
+	position: relative;
+	left: 0px;
+	display: block;
+	width: 100%;
+	margin-top:20px;
+}
+/*сокрытие главного изображения*/
+.main_image{
+	display: none;
+}
+.main_image > img{
+	display: none;
+}
+/*название главного раздела для мобильной версии*/
+.wrap-title{
+	position: relative;
+	top: 25px;
+	display: block;
+	color: white;
+	width: 100%;
+	height: 50px;
+	background-color: black;
+	font-size: 30px;
+	text-align: center;
+	line-height: 60px;
+	font-weight: 100;
+}
+/*бургер меню*/
+#menu__toggle{
+	display: block;
+}
+#menu__toggle:checked ~ .menu__btn > span {
+  transform: rotate(45deg);
+}
+#menu__toggle:checked ~ .menu__btn > span::before {
+  top: 0;
+  transform: rotate(0);
+}
+#menu__toggle:checked ~ .menu__btn > span::after {
+  top: 0;
+  transform: rotate(90deg);
+}
+#menu__toggle:checked ~ .main{
+	transition: 0.3s;
+  left: 40%;
+}
+/* скрываем чекбокс */
+#menu__toggle {
+  opacity: 0;
+}
+/* стилизуем кнопку */
+.menu__btn{
+  display: flex; /* используем flex для центрирования содержимого */
+  align-items: center;  /* центрируем содержимое кнопки */
+  position: fixed;
+  top: 15px;
+  left: 91%;
+  width: 26px;
+  height: 26px;
+  cursor: pointer;
+  z-index: 50;
+}
+/* добавляем "гамбургер" */
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+ background-color: white;
+}
+.menu__btn > span::before {
+	transition: 0.2s;
+  content: '';
+  top: -8px;
+}
+.menu__btn > span::after {
+		transition: 0.2s;
+  content: '';
+  top: 8px;
+}
+/*контейнер для бокового мобильного меню*/
+.main{
+display: block;
+left: 110%;
+margin: 0;
+list-style: none;
+text-align: center;
+position: fixed;
+width: 290px;
+height: 800px;
+top: 0px;
+z-index: 3;
+background-size: cover;
+background: url(../images/0jvg0kFj66M.jpg) no-repeat center top;
+}
+/*скрытие главного меню десктопа*/
+.main_menu{
+	display: none;
+}
+.main_menu_mobile{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	display: block;
+}
+.main_menu_mobile > ul{
+	margin-top: 100px;
+	position: relative;
+	width: 100%;
+	height: 300px;
+	display: flex;
+	flex-direction: column;
+	vertical-align: center;
+	justify-content: space-between;
+}
+.main_menu_mobile > ul > a > li{
+	position: relative;
+	height: 40px;
+	left: -40px;
+	margin: -6px;
+}
+.main_menu_mobile > ul > a > li:hover{
+	background-color: white;
+}
+.main_menu_mobile-1img{
+background: url(../icons/main-mobile-menu1.png) no-repeat center top;
+}
+.main_menu_mobile-2img{
+background: url(../icons/main-mobile-menu2.png) no-repeat center top;
+}
+.main_menu_mobile-3img{
+background: url(../icons/main-mobile-menu3.png) no-repeat center top;
+}
+.main_menu_mobile-4img{
+background: url(../icons/main-mobile-menu4.png) no-repeat center top;
+}
+.main_menu_mobile-5img{
+background: url(../icons/main-mobile-menu5.png) no-repeat center top;
+}
+.main_menu_mobile-6img{
+background: url(../icons/main-mobile-menu6.png) no-repeat center top;
+}
+.main_menu_mobile-7img{
+background: url(../icons/main-mobile-menu7.png) no-repeat center top;
+}
+.main_menu_mobile-8img{
+background: url(../icons/main-mobile-menu8.png) no-repeat center top;
+}
+.main_menu_mobile-9img{
+background: url(../icons/main-mobile-menu9.png) no-repeat center top;
+}
+.main_menu_mobile-10img{
+background: url(../icons/main-mobile-menu10.png) no-repeat center top;
+}
+.main_menu_mobile-11img{
+background: url(../icons/main-mobile-menu11.png) no-repeat center top;
+}
+.main_menu_mobile-12img{
+background: url(../icons/main-mobile-menu12.png) no-repeat center top;
+}
+/*сокрытие колонки для аватара автора*/
+.author_column{
+	display: none;
+}
+/*оболочка для секции с записями*/
+.main_wrap-text{
+	background-color: #430B0B;
+	color:#BB7D5A;
+	width: 100%;
+	padding: 0px;
+	margin: 0px;
+}
+/*шапка МВ сайта с логотипом и бургером*/
+.head-site-mobile{
+	position: fixed;
+	width: 100%;
+	height: 55px;
+	background-color: #6C1818;
+	z-index: 4;
+	top: 0px;
+	display: block;
+}
+/*логотип МВ*/
+.head-site-mobile-logo{
+	position: relative;
+ margin-left: 20px;
+ top: 15px;
+	font-family: 'Roboto Condensed', sans-serif;
+	font-size:25px;
+	color: #BCA770;
+	font-weight: 100;
+	width: 25%;
+}
+/*спецификатор для всех постов*/
+.post{
+	position: relative;
+	background-color:white;
+	width: 100%;
+	padding: 0px;
+	margin: 0px;
+	display: block;
+	margin-top: 10px;
+}
+/*дополнительный контекст для всех постов*/
+.post-context{
+	position: relative;
+    left:10px;
+	top: 10px;
+}
+/*оболочка для заглавной части поста МВ*/
+.post-head{
+	position: relative;
+	top: 10px;
+	display: block;
+}
+/*заглавная часть поста МВ*/
+.post-head-span-text-block{
+	position: relative;
+	padding-left: 20px;
+	top: 20px;
+	height: auto;
+	width: 100%;                                                
+	color: #6C1818;
+	display: flex;
+}
+/*аватарка МВ*/
+.mobile-icon-avatar{
+	position: relative;
+	left: 7px;
+	top: -10px;
+	width:70px;
+	height: 70px;
+}
+/*имя автора или его ник в МВ*/
+.post-head-span-text-block_username{
+	position: relative;
+	padding-left: 20px;
+	height: auto;
+	width: auto;                                                
+	color: #6C1818;
+}
+.post-head-span-text-block_username:hover{
+color: red;
+text-decoration: underline;
+}
+/*дата МВ*/
+.post-head-span-text-block_datatime{
+	position: relative;
+	padding-left: 33%;
+	height: auto;
+	width: auto;                                                
+	color: #6C1818;
+}
+.post-head-span-text-block_datatime:hover{
+text-decoration: underline;
+}
+/*меню управления постом МВ*/
+.post-head-span-text-block_over{
+	position: relative;
+	padding-left: 10px;
+	height: 10px;
+	padding-top: 10px;
+	width: 30px;                                                
+	color: #6C1818;
+	background: url(../icons/more.png) no-repeat center;
+}
+/*свойства для изображения аватарки МВ*/
+.mobile-icon-avatar > img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	border-radius: 100px;
+}
+/*глобальный псевдоактиватор для выравнивания текста*/
+.--ident{
+	text-indent: 20px;
+}
+/*контент поста*/
+.author-post{
+	border: none;
+	padding: 0px;
+	margin: 0px;
+	left: 0px;
+	width: 100%;
+}
+/*сокрытие аватара автора поста ДВ*/
+.author_column-img{
+	display: none;
+}
+.author_column-img > img{
+display: none;
+}
+/*деинтеграция глобального псевдоактиватора для всех заголовков постов*/
+.--h1_post:hover{
+	color: black;
+}
+/*псевдоактиватор для текста заголовка поста */
+.--h1_post{
+position: relative;
+width: 100%;
+height: auto;
+left: 5px;
+padding:0px;
+padding-top:10px;
+margin: 0px;
+font-style: normal;
+font-weight: bold;
+font-size: 27px;
+line-height: 110.6%;
+color: #6C1818;
+padding-bottom: 30px;
+}
+.form_output{
+	display: none;
+}
+/*глобальные псевдоактиваторы мобильной версии*/
+/***********************/
+/*глобальные селекторы*/
+body{
+	background-color: black;
+	font-family: 'Calibri';
+	color: white;
+	padding: 0px;
+	margin: 0px;
+	right: 0px;
+}
+html{
+	padding:0px;
+	margin: 0px;
+	right: 0px;
+	background-color: black;
+}
+a{
+	text-decoration: none;
+	list-style-type: none;
+	color: white;
+}
+
+.post-head{
+	position: relative;
+	width: 100%;
+	height: 100px;
+	display: inline-flex;
+}
+/******************************/
+/*Автор:*/
+.author_profile_link{
+	display: none;
+}
+/*ссылка на автора и него ник*/
+.author_Nik-Name{
+display: none;
+}
+/*анимация волны при наведении*/
+.author_Nik-Name:hover{
+	display: none;
+}
+/*блок с временем и датой выпуска поста*/
+.datatime_block{
+position: relative;
+width: auto;
+height: auto;
+left: 55%;
+top: 0px;
+font-style: italic;
+font-weight: normal;
+font-size: 1em;
+line-height: 110.6%;
+color: #6C1818;
+}
+.post-delimiter{
+	display: block;
+	border: 5px solid #8B1B1B;
+}
+.post-social-menu{
+display: none;
+}
+.post-comment-icon{
+display: none;
+}
+.post-quantity-comment{
+display: none;
+	}
+.post-like-icon{
+display: none;
+}
+.post-quantity-like{
+display: none;
+}
+.post-quantity-like > span{
+display: none;
+}
+.post-comment-menu{
+display: none;
+}
+.post-avatar-comment{
+display: none;
+}
+.post-avtor-comment{
+display: none;
+}
+.post-comment-datatime{
+display: none;
+}
+.post-comment-text{
+display: none;
+}
+/*форма обратной связи*/
+.form_output{
+	margin-top: 20px;
+	width: 100%;
+	height: 100%;
+}
+.mobile-copuright{
+	padding-top: 20px;
+	display: block;
+	width: 100%;
+	height: 70px;
+	background: #6C1818;
+	text-align: center;
+	color: white;
+	font-weight: 100;
+}
+.mobile-copuright > p{
+	padding: 0px;
+	margin: 0px;
+}
+.mobile-delem{
+	border: 5px solid #B52828;
+}
+footer{
+position: relative;
+background-color: #360909;
+width: 100%;
+margin: 0px;
+padding: 0px;
+height: 150px;
+}
+.social-icons{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	position: relative;
+	margin-left: 0px;
+padding-left:0px;
+	float: left;
+	height: auto;
+	z-index: 2;
+}
+.social-icons > a > img{
+	position: relative;
+	margin-right: 10px;
+}
+::-webkit-scrollbar {
+    width: 12px;
+ background-color: none;
+}
+::-webkit-scrollbar-track {
+	background-color: #6C1818;
+}
+::-webkit-scrollbar-thumb {
+	border-radius: 20px;
+ background-color: #2A0707;
+}
+::-webkit-scrollbar-button{
+	background-color: #B52828;
+}
+::-webkit-resizer{
+	background-color: #B52828;
+	border-radius: 20px;
+}
+.copy-block{
+	display: none;
+}
+/*************************/
+}
