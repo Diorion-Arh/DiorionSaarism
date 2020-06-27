@@ -3,7 +3,6 @@ let open = document.getElementById("active_album");
 let close = document.getElementById("close_album");
 open.addEventListener("click", () => {
     content.style.display = "block"
-
 });
 close.addEventListener("click", () => {
     content.style.display = "none"

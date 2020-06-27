@@ -1,4 +1,111 @@
 @media (max-width: 480px){
+.descript-photo-input{
+	position: relative;
+    grid-column-start: 1;
+	grid-column-end: 1;
+	grid-row-start: 3;
+	grid-row-end: 3;
+	height: 80px;
+	color: blue;
+	display: none;
+}
+.descript-photo{
+	position: relative;
+	border: none;
+	font-size: 16px;
+	margin-left: 0%;
+	text-align: left;
+	color: white;
+	background: black;
+	grid-column-start: 1;
+	grid-column-end: 1;
+	grid-row-start: 2;
+	grid-row-end:2;
+	text-decoration: underline;
+	display: block;
+}
+.block-activity{
+    grid-column-start: 2;
+	grid-column-end: 2;
+	grid-row-start: 4;
+	grid-row-end: 4;	
+	padding-top: 10px;
+	text-align: center;
+	color: white;
+	text-decoration: underline;
+	font-size: 16px;
+}
+.block-activity:hover{
+	color: red;
+	cursor: pointer;
+}
+.name_author-photo{
+	padding-top: 10px;
+	position: relative;
+	grid-column-start: 2;
+	grid-column-end: 2;
+	grid-row-start: 2;
+	grid-row-end: 2;
+	font-size: 16px;
+	text-align: center;
+	color: white;
+}
+.name_author-photo:hover{
+	cursor: pointer;
+	position: relative;
+	color: red;
+}
+.name_photo{
+	position: relative;
+	font-size: 25px;
+	font-weight: 100;
+	grid-column-start: 1;
+	grid-column-end: 1;
+	grid-row-start: 1;
+	grid-row-end: 1;
+	padding-top: 20px;
+	min-width: 340px;
+}
+.author_photo > img{
+	border-radius: 90px;
+	height: 80px;
+	width: 80px;
+	object-fit: cover;
+}
+.author_photo{
+	position: relative;
+	grid-column-start: 2;
+	grid-column-end: 3;
+	grid-row-start: 1;
+	grid-row-end: 1;
+	min-height: 80px;
+	padding-top: 20px;
+}
+.command_wrap_image{
+	position: relative;
+	top: 5%;
+	left: 0%;
+	width: 95%;
+	height: 60%;
+	overflow: scroll;
+	overflow-x: hidden;
+}
+.wrap-decsript{
+	position: relative;
+	display: grid;
+	left: 0%;
+	top: 40px;
+	width: 95%;
+	height: auto;
+	grid-template-columns: auto auto;
+	grid-template-rows: auto auto auto auto;
+}
+.close_photo{
+	right: 20px;
+	}
+.open_image{
+	top: 55px;
+}
 .close_album:after{
 content: 'закрыть';
 color: white;
@@ -132,7 +239,7 @@ position: fixed;
 width: 290px;
 height: 800px;
 top: 0px;
-z-index: 3;
+z-index: 4;
 background-size: cover;
 background: url(../images/0jvg0kFj66M.jpg) no-repeat center top;
 }
